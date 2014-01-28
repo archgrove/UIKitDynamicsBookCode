@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0772A31D18981E1F0065920F /* DynamicsDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 0772A31C18981E1F0065920F /* DynamicsDemo.m */; };
+		0772A321189821700065920F /* GravityDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 0772A320189821700065920F /* GravityDemo.m */; };
+		0772A324189826090065920F /* CollisionBehaviorDemo1.m in Sources */ = {isa = PBXBuildFile; fileRef = 0772A323189826090065920F /* CollisionBehaviorDemo1.m */; };
+		0772A327189828140065920F /* CollisionBehaviorDemo2.m in Sources */ = {isa = PBXBuildFile; fileRef = 0772A326189828140065920F /* CollisionBehaviorDemo2.m */; };
 		07EB426417ABB51E0067F348 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07EB426317ABB51E0067F348 /* Foundation.framework */; };
 		07EB426617ABB51E0067F348 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07EB426517ABB51E0067F348 /* CoreGraphics.framework */; };
 		07EB426817ABB51E0067F348 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07EB426717ABB51E0067F348 /* UIKit.framework */; };
@@ -15,13 +19,14 @@
 		07EB427417ABB51E0067F348 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 07EB427317ABB51E0067F348 /* AppDelegate.m */; };
 		07EB427717ABB51E0067F348 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07EB427517ABB51E0067F348 /* Main.storyboard */; };
 		07EB427A17ABB51E0067F348 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07EB427917ABB51E0067F348 /* MasterViewController.m */; };
-		07EB427D17ABB51E0067F348 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07EB427C17ABB51E0067F348 /* DetailViewController.m */; };
+		07EB427D17ABB51E0067F348 /* DynamicsDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07EB427C17ABB51E0067F348 /* DynamicsDemoViewController.m */; };
 		07EB427F17ABB51E0067F348 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07EB427E17ABB51E0067F348 /* Images.xcassets */; };
 		07EB428617ABB51E0067F348 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07EB428517ABB51E0067F348 /* XCTest.framework */; };
 		07EB428717ABB51E0067F348 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07EB426317ABB51E0067F348 /* Foundation.framework */; };
 		07EB428817ABB51E0067F348 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07EB426717ABB51E0067F348 /* UIKit.framework */; };
 		07EB429017ABB51E0067F348 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 07EB428E17ABB51E0067F348 /* InfoPlist.strings */; };
 		07EB429217ABB51E0067F348 /* UIKitDynamicsBookTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 07EB429117ABB51E0067F348 /* UIKitDynamicsBookTests.m */; };
+		07EB429D17AC1A5C0067F348 /* ShapeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 07EB429C17AC1A5C0067F348 /* ShapeView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +40,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0772A31B18981E1F0065920F /* DynamicsDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicsDemo.h; sourceTree = "<group>"; };
+		0772A31C18981E1F0065920F /* DynamicsDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicsDemo.m; sourceTree = "<group>"; };
+		0772A31F189821700065920F /* GravityDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GravityDemo.h; sourceTree = "<group>"; };
+		0772A320189821700065920F /* GravityDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GravityDemo.m; sourceTree = "<group>"; };
+		0772A322189826090065920F /* CollisionBehaviorDemo1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollisionBehaviorDemo1.h; sourceTree = "<group>"; };
+		0772A323189826090065920F /* CollisionBehaviorDemo1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollisionBehaviorDemo1.m; sourceTree = "<group>"; };
+		0772A325189828140065920F /* CollisionBehaviorDemo2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollisionBehaviorDemo2.h; sourceTree = "<group>"; };
+		0772A326189828140065920F /* CollisionBehaviorDemo2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollisionBehaviorDemo2.m; sourceTree = "<group>"; };
 		07EB426017ABB51E0067F348 /* UIKitDynamicsBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitDynamicsBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07EB426317ABB51E0067F348 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		07EB426517ABB51E0067F348 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -48,14 +61,16 @@
 		07EB427617ABB51E0067F348 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		07EB427817ABB51E0067F348 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
 		07EB427917ABB51E0067F348 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		07EB427B17ABB51E0067F348 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		07EB427C17ABB51E0067F348 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		07EB427B17ABB51E0067F348 /* DynamicsDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DynamicsDemoViewController.h; sourceTree = "<group>"; };
+		07EB427C17ABB51E0067F348 /* DynamicsDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DynamicsDemoViewController.m; sourceTree = "<group>"; };
 		07EB427E17ABB51E0067F348 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		07EB428417ABB51E0067F348 /* UIKitDynamicsBookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIKitDynamicsBookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		07EB428517ABB51E0067F348 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		07EB428D17ABB51E0067F348 /* UIKitDynamicsBookTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UIKitDynamicsBookTests-Info.plist"; sourceTree = "<group>"; };
 		07EB428F17ABB51E0067F348 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		07EB429117ABB51E0067F348 /* UIKitDynamicsBookTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIKitDynamicsBookTests.m; sourceTree = "<group>"; };
+		07EB429B17AC1A5C0067F348 /* ShapeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShapeView.h; sourceTree = "<group>"; };
+		07EB429C17AC1A5C0067F348 /* ShapeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShapeView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +97,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0772A31E189821550065920F /* Demos */ = {
+			isa = PBXGroup;
+			children = (
+				0772A31F189821700065920F /* GravityDemo.h */,
+				0772A320189821700065920F /* GravityDemo.m */,
+				0772A322189826090065920F /* CollisionBehaviorDemo1.h */,
+				0772A323189826090065920F /* CollisionBehaviorDemo1.m */,
+				0772A325189828140065920F /* CollisionBehaviorDemo2.h */,
+				0772A326189828140065920F /* CollisionBehaviorDemo2.m */,
+			);
+			name = Demos;
+			sourceTree = "<group>";
+		};
 		07EB425717ABB51E0067F348 = {
 			isa = PBXGroup;
 			children = (
@@ -115,14 +143,19 @@
 		07EB426917ABB51E0067F348 /* UIKitDynamicsBook */ = {
 			isa = PBXGroup;
 			children = (
+				07EB427517ABB51E0067F348 /* Main.storyboard */,
+				0772A31E189821550065920F /* Demos */,
 				07EB427217ABB51E0067F348 /* AppDelegate.h */,
 				07EB427317ABB51E0067F348 /* AppDelegate.m */,
-				07EB427517ABB51E0067F348 /* Main.storyboard */,
 				07EB427817ABB51E0067F348 /* MasterViewController.h */,
 				07EB427917ABB51E0067F348 /* MasterViewController.m */,
-				07EB427B17ABB51E0067F348 /* DetailViewController.h */,
-				07EB427C17ABB51E0067F348 /* DetailViewController.m */,
+				07EB427B17ABB51E0067F348 /* DynamicsDemoViewController.h */,
+				07EB427C17ABB51E0067F348 /* DynamicsDemoViewController.m */,
 				07EB427E17ABB51E0067F348 /* Images.xcassets */,
+				07EB429B17AC1A5C0067F348 /* ShapeView.h */,
+				07EB429C17AC1A5C0067F348 /* ShapeView.m */,
+				0772A31B18981E1F0065920F /* DynamicsDemo.h */,
+				0772A31C18981E1F0065920F /* DynamicsDemo.m */,
 				07EB426A17ABB51E0067F348 /* Supporting Files */,
 			);
 			path = UIKitDynamicsBook;
@@ -256,8 +289,13 @@
 			files = (
 				07EB427417ABB51E0067F348 /* AppDelegate.m in Sources */,
 				07EB427A17ABB51E0067F348 /* MasterViewController.m in Sources */,
+				07EB429D17AC1A5C0067F348 /* ShapeView.m in Sources */,
+				0772A327189828140065920F /* CollisionBehaviorDemo2.m in Sources */,
+				0772A321189821700065920F /* GravityDemo.m in Sources */,
 				07EB427017ABB51E0067F348 /* main.m in Sources */,
-				07EB427D17ABB51E0067F348 /* DetailViewController.m in Sources */,
+				0772A324189826090065920F /* CollisionBehaviorDemo1.m in Sources */,
+				0772A31D18981E1F0065920F /* DynamicsDemo.m in Sources */,
+				07EB427D17ABB51E0067F348 /* DynamicsDemoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,6 +498,7 @@
 				07EB429717ABB51E0067F348 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		07EB429817ABB51E0067F348 /* Build configuration list for PBXNativeTarget "UIKitDynamicsBookTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +507,7 @@
 				07EB429A17ABB51E0067F348 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

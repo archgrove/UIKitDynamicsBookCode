@@ -12,6 +12,10 @@
 #import "GravityDemo.h"
 #import "CollisionBehaviorDemo1.h"
 #import "CollisionBehaviorDemo2.h"
+#import "ImpulsePush.h"
+#import "ContinuousPush.h"
+#import "AttachmentPoint.h"
+#import "AttachmentView.h"
 
 @interface MasterViewController () {
     NSArray *demos;
@@ -32,7 +36,11 @@
     demos = @[
               [[GravityDemo alloc] init],
               [[CollisionBehaviorDemo1 alloc] init],
-              [[CollisionBehaviorDemo2 alloc] init]
+              [[CollisionBehaviorDemo2 alloc] init],
+              [[ImpulsePush alloc] init],
+              [[ContinuousPush alloc] init],
+              [[AttachmentPoint alloc] init],
+              [[AttachmentView alloc] init]
             ];
 }
 

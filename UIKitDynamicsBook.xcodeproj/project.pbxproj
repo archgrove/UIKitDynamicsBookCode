@@ -25,6 +25,8 @@
 		07B0D9D818A29EEA00B46DF0 /* SpecularBackgroundEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B0D9D518A29EEA00B46DF0 /* SpecularBackgroundEffect.m */; };
 		07B0D9D918A29EEA00B46DF0 /* SpecularButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B0D9D718A29EEA00B46DF0 /* SpecularButtonViewController.m */; };
 		07B0D9DF18A29F9900B46DF0 /* GridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B0D9DE18A29F9900B46DF0 /* GridView.m */; };
+		07B0D9E618A2AC1C00B46DF0 /* DangleMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B0D9E518A2AC1C00B46DF0 /* DangleMenuViewController.m */; };
+		07B0D9E918A2AC5500B46DF0 /* DangleMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B0D9E818A2AC5500B46DF0 /* DangleMenuController.m */; };
 		07EB426417ABB51E0067F348 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07EB426317ABB51E0067F348 /* Foundation.framework */; };
 		07EB426617ABB51E0067F348 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07EB426517ABB51E0067F348 /* CoreGraphics.framework */; };
 		07EB426817ABB51E0067F348 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07EB426717ABB51E0067F348 /* UIKit.framework */; };
@@ -90,6 +92,10 @@
 		07B0D9D718A29EEA00B46DF0 /* SpecularButtonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SpecularButtonViewController.m; path = Recipes/SpecularBackground/SpecularButtonViewController.m; sourceTree = "<group>"; };
 		07B0D9DD18A29F9900B46DF0 /* GridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GridView.h; sourceTree = "<group>"; };
 		07B0D9DE18A29F9900B46DF0 /* GridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GridView.m; sourceTree = "<group>"; };
+		07B0D9E418A2AC1C00B46DF0 /* DangleMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DangleMenuViewController.h; path = Recipes/DangleMenu/DangleMenuViewController.h; sourceTree = "<group>"; };
+		07B0D9E518A2AC1C00B46DF0 /* DangleMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DangleMenuViewController.m; path = Recipes/DangleMenu/DangleMenuViewController.m; sourceTree = "<group>"; };
+		07B0D9E718A2AC5500B46DF0 /* DangleMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DangleMenuController.h; path = Recipes/DangleMenu/DangleMenuController.h; sourceTree = "<group>"; };
+		07B0D9E818A2AC5500B46DF0 /* DangleMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DangleMenuController.m; path = Recipes/DangleMenu/DangleMenuController.m; sourceTree = "<group>"; };
 		07EB426017ABB51E0067F348 /* UIKitDynamicsBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitDynamicsBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07EB426317ABB51E0067F348 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		07EB426517ABB51E0067F348 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -173,6 +179,7 @@
 		07B0D9CD18A29ED300B46DF0 /* Recipes */ = {
 			isa = PBXGroup;
 			children = (
+				07B0D9E018A2AB5700B46DF0 /* DangleMenu */,
 				07B0D9DC18A29EFE00B46DF0 /* Draggable image */,
 				07B0D9DB18A29EFC00B46DF0 /* Specular background */,
 				07B0D9DA18A29EF100B46DF0 /* Bounce in view */,
@@ -207,6 +214,17 @@
 				07B0D9D218A29EE200B46DF0 /* DraggableImageViewController.m */,
 			);
 			name = "Draggable image";
+			sourceTree = "<group>";
+		};
+		07B0D9E018A2AB5700B46DF0 /* DangleMenu */ = {
+			isa = PBXGroup;
+			children = (
+				07B0D9E418A2AC1C00B46DF0 /* DangleMenuViewController.h */,
+				07B0D9E518A2AC1C00B46DF0 /* DangleMenuViewController.m */,
+				07B0D9E718A2AC5500B46DF0 /* DangleMenuController.h */,
+				07B0D9E818A2AC5500B46DF0 /* DangleMenuController.m */,
+			);
+			name = DangleMenu;
 			sourceTree = "<group>";
 		};
 		07EB425717ABB51E0067F348 = {
@@ -401,10 +419,12 @@
 				07EB427017ABB51E0067F348 /* main.m in Sources */,
 				07B0D9CC18A29ECB00B46DF0 /* SnapDemo.m in Sources */,
 				07B0D9D918A29EEA00B46DF0 /* SpecularButtonViewController.m in Sources */,
+				07B0D9E618A2AC1C00B46DF0 /* DangleMenuViewController.m in Sources */,
 				07B0D9C918A29ECB00B46DF0 /* ContinuousPushOffCentre.m in Sources */,
 				0772A31D18981E1F0065920F /* DynamicsDemo.m in Sources */,
 				07B0D9C718A29ECB00B46DF0 /* CollisionBehaviorDemo3.m in Sources */,
 				07B0D9C318A29ECB00B46DF0 /* AttachmentView.m in Sources */,
+				07B0D9E918A2AC5500B46DF0 /* DangleMenuController.m in Sources */,
 				07EB427D17ABB51E0067F348 /* DynamicsDemoViewController.m in Sources */,
 				07FC78F518A24A0F00D1E4A7 /* RecipesListViewController.m in Sources */,
 				07B0D9D818A29EEA00B46DF0 /* SpecularBackgroundEffect.m in Sources */,

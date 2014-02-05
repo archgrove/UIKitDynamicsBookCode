@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0772A31D18981E1F0065920F /* DynamicsDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 0772A31C18981E1F0065920F /* DynamicsDemo.m */; };
-		0772A339189931520065920F /* GridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0772A338189931520065920F /* GridView.m */; };
 		07B0D9C118A29ECB00B46DF0 /* AttachmentPoint1.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B0D9B518A29ECB00B46DF0 /* AttachmentPoint1.m */; };
 		07B0D9C218A29ECB00B46DF0 /* AttachmentPoint2.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B0D9B618A29ECB00B46DF0 /* AttachmentPoint2.m */; };
 		07B0D9C318A29ECB00B46DF0 /* AttachmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B0D9B718A29ECB00B46DF0 /* AttachmentView.m */; };
@@ -25,6 +24,7 @@
 		07B0D9D318A29EE200B46DF0 /* DraggableImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B0D9D218A29EE200B46DF0 /* DraggableImageViewController.m */; };
 		07B0D9D818A29EEA00B46DF0 /* SpecularBackgroundEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B0D9D518A29EEA00B46DF0 /* SpecularBackgroundEffect.m */; };
 		07B0D9D918A29EEA00B46DF0 /* SpecularButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B0D9D718A29EEA00B46DF0 /* SpecularButtonViewController.m */; };
+		07B0D9DF18A29F9900B46DF0 /* GridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B0D9DE18A29F9900B46DF0 /* GridView.m */; };
 		07EB426417ABB51E0067F348 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07EB426317ABB51E0067F348 /* Foundation.framework */; };
 		07EB426617ABB51E0067F348 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07EB426517ABB51E0067F348 /* CoreGraphics.framework */; };
 		07EB426817ABB51E0067F348 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07EB426717ABB51E0067F348 /* UIKit.framework */; };
@@ -56,8 +56,6 @@
 /* Begin PBXFileReference section */
 		0772A31B18981E1F0065920F /* DynamicsDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicsDemo.h; sourceTree = "<group>"; };
 		0772A31C18981E1F0065920F /* DynamicsDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicsDemo.m; sourceTree = "<group>"; };
-		0772A337189931520065920F /* GridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GridView.h; path = ../GridView.h; sourceTree = "<group>"; };
-		0772A338189931520065920F /* GridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GridView.m; path = ../GridView.m; sourceTree = "<group>"; };
 		07B0D9A918A29ECB00B46DF0 /* AttachmentPoint1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AttachmentPoint1.h; path = Demos/AttachmentPoint1.h; sourceTree = "<group>"; };
 		07B0D9AA18A29ECB00B46DF0 /* AttachmentPoint2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AttachmentPoint2.h; path = Demos/AttachmentPoint2.h; sourceTree = "<group>"; };
 		07B0D9AB18A29ECB00B46DF0 /* AttachmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AttachmentView.h; path = Demos/AttachmentView.h; sourceTree = "<group>"; };
@@ -90,6 +88,8 @@
 		07B0D9D518A29EEA00B46DF0 /* SpecularBackgroundEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SpecularBackgroundEffect.m; path = Recipes/SpecularBackground/SpecularBackgroundEffect.m; sourceTree = "<group>"; };
 		07B0D9D618A29EEA00B46DF0 /* SpecularButtonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpecularButtonViewController.h; path = Recipes/SpecularBackground/SpecularButtonViewController.h; sourceTree = "<group>"; };
 		07B0D9D718A29EEA00B46DF0 /* SpecularButtonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SpecularButtonViewController.m; path = Recipes/SpecularBackground/SpecularButtonViewController.m; sourceTree = "<group>"; };
+		07B0D9DD18A29F9900B46DF0 /* GridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GridView.h; sourceTree = "<group>"; };
+		07B0D9DE18A29F9900B46DF0 /* GridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GridView.m; sourceTree = "<group>"; };
 		07EB426017ABB51E0067F348 /* UIKitDynamicsBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitDynamicsBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07EB426317ABB51E0067F348 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		07EB426517ABB51E0067F348 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -244,14 +244,14 @@
 			children = (
 				07B0D9CD18A29ED300B46DF0 /* Recipes */,
 				07B0D9A818A29EC000B46DF0 /* Demos */,
+				07B0D9DD18A29F9900B46DF0 /* GridView.h */,
+				07B0D9DE18A29F9900B46DF0 /* GridView.m */,
 				07EB427B17ABB51E0067F348 /* DynamicsDemoViewController.h */,
 				07EB427C17ABB51E0067F348 /* DynamicsDemoViewController.m */,
 				0772A31B18981E1F0065920F /* DynamicsDemo.h */,
 				0772A31C18981E1F0065920F /* DynamicsDemo.m */,
 				07EB429B17AC1A5C0067F348 /* ShapeView.h */,
 				07EB429C17AC1A5C0067F348 /* ShapeView.m */,
-				0772A337189931520065920F /* GridView.h */,
-				0772A338189931520065920F /* GridView.m */,
 				07FC78F318A24A0F00D1E4A7 /* RecipesListViewController.h */,
 				07FC78F418A24A0F00D1E4A7 /* RecipesListViewController.m */,
 				07EB427217ABB51E0067F348 /* AppDelegate.h */,
@@ -410,8 +410,8 @@
 				07B0D9D818A29EEA00B46DF0 /* SpecularBackgroundEffect.m in Sources */,
 				07B0D9D018A29EDC00B46DF0 /* ViewBounceInViewController.m in Sources */,
 				07B0D9C518A29ECB00B46DF0 /* CollisionBehaviorDemo1.m in Sources */,
+				07B0D9DF18A29F9900B46DF0 /* GridView.m in Sources */,
 				07B0D9C218A29ECB00B46DF0 /* AttachmentPoint2.m in Sources */,
-				0772A339189931520065920F /* GridView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -12,35 +12,31 @@
 
 @implementation ImpulsePush
 {
-    ShapeView *view;
-    
     DynamicsDemoViewController *controller;
+    
+    UIDynamicBehavior *totalBehavior;
 }
 
 - (void)configureViewsInController:(DynamicsDemoViewController*)viewController
 {
     controller = viewController;
     
-    view = [[ShapeView alloc] initWithFrame:CGRectMake(0, 0, 100, 30)];
-    view.backgroundColor = [UIColor greenColor];
+    ShapeView *view = [controller shapeViewInCenterWithSize:CGSizeMake(100, 30)];
+    view.center = CGPointMake(75, 100);
     
-    [viewController moveViewToTopCentre:view withOffset:CGPointMake(-75, 50)];
-    [viewController.view addSubview:view];
-}
-
-- (void)tapped
-{
     UIDynamicItemBehavior *dynamicItemBehavior = [[UIDynamicItemBehavior alloc] initWithItems:@[view]];
     dynamicItemBehavior.resistance = 1;
     
     UIPushBehavior *pushBehavior = [[UIPushBehavior alloc] initWithItems:@[view] mode:UIPushBehaviorModeInstantaneous];
     pushBehavior.pushDirection = CGVectorMake(0.5, 0.5);
     
-    UIDynamicBehavior *totalBehavior = [[UIDynamicBehavior alloc] init];
+    totalBehavior = [[UIDynamicBehavior alloc] init];
     [totalBehavior addChildBehavior:pushBehavior];
     [totalBehavior addChildBehavior:dynamicItemBehavior];
+}
 
-    
+- (void)activate
+{
     [controller.dynamicAnimator addBehavior:totalBehavior];
 }
 

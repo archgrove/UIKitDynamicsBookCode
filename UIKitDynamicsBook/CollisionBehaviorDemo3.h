@@ -1,5 +1,5 @@
 //
-//  ImpulsePush.h
+//  CollisionBehaviorDemo1.h
 //  UIKitDynamicsBook
 //
 //  Created by Adam Wright on 28/01/2014.
@@ -8,6 +8,6 @@
 
 #import "DynamicsDemo.h"
 
-@interface AttachmentPoint : DynamicsDemo
+@interface CollisionBehaviorDemo3 : DynamicsDemo
 
 @end

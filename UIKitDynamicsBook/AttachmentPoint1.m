@@ -6,17 +6,12 @@
 //  Copyright (c) 2014 Adam Wright. All rights reserved.
 //
 
-#import "AttachmentPoint.h"
+#import "AttachmentPoint1.h"
 #import "ShapeView.h"
 #import "DynamicsDemoViewController.h"
 
-@implementation AttachmentPoint
+@implementation AttachmentPoint1
 {
-    ShapeView *view;
-    
-    UIGravityBehavior *gravity;
-    UIAttachmentBehavior *attachment;
-    UIDynamicItemBehavior *item;
     UIDynamicBehavior *totalBehavior;
     
     DynamicsDemoViewController *controller;
@@ -26,21 +21,17 @@
 {
     controller = viewController;
     
-    view = [[ShapeView alloc] initWithFrame:CGRectMake(0, 0, 100, 30)];
-    view.backgroundColor = [UIColor greenColor];
+    ShapeView *view = [controller shapeViewInCenterWithSize:CGSizeMake(100, 30)];
+    view.center = CGPointMake(100, 100);
     
-    [viewController moveViewToTopCentre:view withOffset:CGPointMake(-100, 50)];
-    [viewController.view addSubview:view];
+    UIGravityBehavior *gravity = [[UIGravityBehavior alloc] initWithItems:@[view]];
     
-    gravity = [[UIGravityBehavior alloc] initWithItems:@[view]];
-    
-    attachment = [[UIAttachmentBehavior alloc] initWithItem:view attachedToAnchor:CGPointMake(160, 100)];
-    attachment.length = 200;
+    UIAttachmentBehavior *attachment = [[UIAttachmentBehavior alloc] initWithItem:view attachedToAnchor:CGPointMake(160, 100)];
+    attachment.length = 100;
     attachment.frequency = 1;
     
-    item = [[UIDynamicItemBehavior alloc] initWithItems:@[view]];
+    UIDynamicItemBehavior *item = [[UIDynamicItemBehavior alloc] initWithItems:@[view]];
     item.resistance = 0.3;
-    
     
     totalBehavior = [[UIDynamicBehavior alloc] init];
     
@@ -49,14 +40,14 @@
     [totalBehavior addChildBehavior:item];
 }
 
-- (void)tapped
+- (void)activate
 {
     [controller.dynamicAnimator addBehavior:totalBehavior];
 }
 
 - (NSString*)demoTitle
 {
-    return @"Attachment to point";
+    return @"Attachment with frequency";
 }
 
 

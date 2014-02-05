@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MasterViewController : UITableViewController
+@interface BehaviorDemosListViewController : UITableViewController
 
 @end

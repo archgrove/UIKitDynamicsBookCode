@@ -12,10 +12,6 @@
 
 @implementation AttachmentView
 {
-    UIGravityBehavior *gravity;
-    UIAttachmentBehavior *attachment;
-    UIDynamicItemBehavior *item;
-    UICollisionBehavior *collision;
     UIDynamicBehavior *totalBehavior;
     
     DynamicsDemoViewController *controller;
@@ -25,21 +21,20 @@
 {
     controller = viewController;
     
-    UIView *view1 = [[ShapeView alloc] initWithFrame:CGRectMake(0, 0, 100, 30)];
-    view1.backgroundColor = [UIColor greenColor];
-    UIView *view2 = [[ShapeView alloc] initWithFrame:CGRectMake(0, 0, 100, 30)];
-    view2.backgroundColor = [UIColor blueColor];
+    ShapeView *view1 = [controller shapeViewInCenterWithSize:CGSizeMake(100, 30)];
+    ShapeView *view2 = [controller shapeViewInCenterWithSize:CGSizeMake(100, 30)];
     
-    [viewController moveViewToTopCentre:view1 withOffset:CGPointMake(100, 50)];
-    [viewController.view addSubview:view1];
-    [viewController moveViewToTopCentre:view2 withOffset:CGPointMake(-100, 50)];
-    [viewController.view addSubview:view2];
+    view1.center = CGPointMake(75, 100);
+    view1.backgroundColor = [UIColor blueColor];
+    view1.labelText = @"Anchor";
     
-    gravity = [[UIGravityBehavior alloc] initWithItems:@[view1]];
+    view2.center = CGPointMake(220, 100);
     
-    attachment = [[UIAttachmentBehavior alloc] initWithItem:view1 attachedToItem:view2];
+    UIGravityBehavior *gravity = [[UIGravityBehavior alloc] initWithItems:@[view1]];
     
-    collision = [[UICollisionBehavior alloc] initWithItems:@[view1, view2]];
+    UIAttachmentBehavior *attachment = [[UIAttachmentBehavior alloc] initWithItem:view1 attachedToItem:view2];
+    
+    UICollisionBehavior *collision = [[UICollisionBehavior alloc] initWithItems:@[view1, view2]];
     collision.translatesReferenceBoundsIntoBoundary = YES;
 
     totalBehavior = [[UIDynamicBehavior alloc] init];
@@ -49,7 +44,7 @@
     [totalBehavior addChildBehavior:attachment];
 }
 
-- (void)tapped
+- (void)activate
 {
     [controller.dynamicAnimator addBehavior:totalBehavior];
 }

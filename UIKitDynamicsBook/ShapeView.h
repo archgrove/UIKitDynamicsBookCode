@@ -10,4 +10,7 @@
 
 @interface ShapeView : UIView
 
+@property (nonatomic) NSString *labelText;
+@property (nonatomic) UIColor *labelColor;
+
 @end

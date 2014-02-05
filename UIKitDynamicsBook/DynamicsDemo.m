@@ -15,9 +15,9 @@
     @throw [NSException exceptionWithName:@"Unimplemented" reason:@"You must implement configureViewsInController:" userInfo:nil];
 }
 
-- (void)tapped
+- (void)activate
 {
-        @throw [NSException exceptionWithName:@"Unimplemented" reason:@"You must implement tapped:" userInfo:nil];
+    @throw [NSException exceptionWithName:@"Unimplemented" reason:@"You must implement tapped:" userInfo:nil];
 }
 
 - (NSString*)demoTitle

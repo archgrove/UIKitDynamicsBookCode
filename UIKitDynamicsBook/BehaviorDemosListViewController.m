@@ -6,23 +6,25 @@
 //  Copyright (c) 2013 Adam Wright. All rights reserved.
 //
 
-#import "MasterViewController.h"
+#import "BehaviorDemosListViewController.h"
 #import "DynamicsDemoViewController.h"
 
 #import "GravityDemo.h"
 #import "CollisionBehaviorDemo1.h"
 #import "CollisionBehaviorDemo2.h"
+#import "CollisionBehaviorDemo3.h"
 #import "ImpulsePush.h"
 #import "ContinuousPush.h"
-#import "AttachmentPoint.h"
+#import "ContinuousPushOffCentre.h"
+#import "AttachmentPoint1.h"
+#import "AttachmentPoint2.h"
 #import "AttachmentView.h"
+#import "SnapDemo.h"
 
-@interface MasterViewController () {
+@implementation BehaviorDemosListViewController
+{
     NSArray *demos;
 }
-@end
-
-@implementation MasterViewController
 
 - (void)awakeFromNib
 {
@@ -37,11 +39,17 @@
               [[GravityDemo alloc] init],
               [[CollisionBehaviorDemo1 alloc] init],
               [[CollisionBehaviorDemo2 alloc] init],
+              [[CollisionBehaviorDemo3 alloc] init],
               [[ImpulsePush alloc] init],
               [[ContinuousPush alloc] init],
-              [[AttachmentPoint alloc] init],
-              [[AttachmentView alloc] init]
+              [[ContinuousPushOffCentre alloc] init],
+              [[AttachmentPoint1 alloc] init],
+              [[AttachmentPoint2 alloc] init],
+              [[AttachmentView alloc] init],
+              [[SnapDemo alloc] init]
             ];
+    
+    self.tabBarItem.title = @"Test";
 }
 
 #pragma mark - Table View

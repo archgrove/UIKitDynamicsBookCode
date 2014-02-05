@@ -9,17 +9,51 @@
 #import "ShapeView.h"
 
 @implementation ShapeView
-
-- (void)drawRect:(CGRect)rect
 {
-    CGContextRef ctx = UIGraphicsGetCurrentContext();
+    UILabel *label;
+}
+
+- (instancetype)initWithFrame:(CGRect)frame
+{
+    self = [super initWithFrame:frame];
     
-    [self.backgroundColor setFill];
-    CGContextFillRect(ctx, rect);
+    if (self)
+    {
+        self.layer.cornerRadius = 3;
+        self.layer.masksToBounds = YES;
+        self.layer.borderColor = [[UIColor blackColor] CGColor];
+        self.layer.borderWidth = 1;
+        
+        label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height)];
+        label.adjustsFontSizeToFitWidth = YES;
+        label.text = @"View";
+        label.textAlignment = NSTextAlignmentCenter;
+        
+        [self addSubview:label];
+        
+        self.backgroundColor = [UIColor darkGrayColor];
+        self.labelColor = [UIColor whiteColor];
+    }
     
-    [[UIColor darkGrayColor] setStroke];
-    CGContextSetLineWidth(ctx, 2);
-    CGContextStrokeRect(ctx, rect);
+    return self;
+}
+
+- (void)setLabelText:(NSString *)labelText
+{
+    [self willChangeValueForKey:@"labelText"];
+    _labelText = labelText;
+    [self didChangeValueForKey:@"labelText"];
+    
+    label.text = labelText;
+}
+
+- (void)setLabelColor:(UIColor*)labelColor
+{
+    [self willChangeValueForKey:@"labelColor"];
+    _labelColor = labelColor;
+    [self didChangeValueForKey:@"labelColor"];
+    
+    label.textColor = labelColor;
 }
 
 @end

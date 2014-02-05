@@ -6,11 +6,11 @@
 //  Copyright (c) 2014 Adam Wright. All rights reserved.
 //
 
-#import "CollisionBehaviorDemo2.h"
+#import "CollisionBehaviorDemo3.h"
 #import "DynamicsDemoViewController.h"
 #import "ShapeView.h"
 
-@implementation CollisionBehaviorDemo2
+@implementation CollisionBehaviorDemo3
 {
     UIDynamicBehavior *totalBehavior;
     
@@ -26,10 +26,12 @@
     
     UICollisionBehavior *collisionBehavior = [[UICollisionBehavior alloc] init];
     collisionBehavior.translatesReferenceBoundsIntoBoundary = YES;
+    collisionBehavior.collisionMode = UICollisionBehaviorModeBoundaries;
     
     totalBehavior = [[UIDynamicBehavior alloc] init];
     [totalBehavior addChildBehavior:gravityBehavior];
     [totalBehavior addChildBehavior:collisionBehavior];
+    
     
     CGRect frames[] = {
         CGRectMake(20, 80, 100, 30),
@@ -55,7 +57,7 @@
 
 - (NSString*)demoTitle
 {
-    return @"Collision 2";
+    return @"Collision 3";
 }
 
 @end

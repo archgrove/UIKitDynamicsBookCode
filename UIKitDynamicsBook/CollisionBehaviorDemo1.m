@@ -23,12 +23,8 @@
 {
     controller = viewController;
     
-    view = [[ShapeView alloc] initWithFrame:CGRectMake(0, 0, 100, 30)];
-    view.backgroundColor = [UIColor greenColor];
-    
-    [viewController moveViewToTopCentre:view withOffset:CGPointMake(0, 0)];
-    [viewController.view addSubview:view];
-    
+    // We will animate the standard rectangle view
+    view = [viewController shapeViewInCenterWithSize:CGSizeMake(100, 30)];
     
     collision = [[UICollisionBehavior alloc] initWithItems:@[view]];
     collision.translatesReferenceBoundsIntoBoundary = YES;
@@ -40,7 +36,7 @@
     [viewController.dynamicAnimator addBehavior:collision];
 }
 
-- (void)tapped
+- (void)activate
 {
     [controller.dynamicAnimator addBehavior:gravity];
 }

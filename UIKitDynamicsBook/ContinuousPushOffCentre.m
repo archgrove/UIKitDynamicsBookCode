@@ -6,11 +6,11 @@
 //  Copyright (c) 2014 Adam Wright. All rights reserved.
 //
 
-#import "ContinuousPush.h"
+#import "ContinuousPushOffCentre.h"
 #import "ShapeView.h"
 #import "DynamicsDemoViewController.h"
 
-@implementation ContinuousPush
+@implementation ContinuousPushOffCentre
 {
     DynamicsDemoViewController *controller;
     
@@ -29,6 +29,7 @@
     
     UIPushBehavior *pushBehavior = [[UIPushBehavior alloc] initWithItems:@[view] mode:UIPushBehaviorModeContinuous];
     pushBehavior.pushDirection = CGVectorMake(0.5, 0.5);
+    [pushBehavior setTargetOffsetFromCenter:UIOffsetMake(-25, -7) forItem:view];
     
     totalBehavior = [[UIDynamicBehavior alloc] init];
     [totalBehavior addChildBehavior:pushBehavior];
@@ -42,7 +43,7 @@
 
 - (NSString*)demoTitle
 {
-    return @"Continuous push";
+    return @"Continuous push off centre";
 }
 
 @end

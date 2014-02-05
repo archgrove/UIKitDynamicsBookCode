@@ -6,15 +6,14 @@
 //  Copyright (c) 2014 Adam Wright. All rights reserved.
 //
 
-#import "GravityDemo.h"
+#import "SnapDemo.h"
 #import "ShapeView.h"
 #import "DynamicsDemoViewController.h"
 
-@implementation GravityDemo
+@implementation SnapDemo
 {
-    ShapeView *view;
+    UISnapBehavior *snap;
     
-    UIGravityBehavior *gravity;
     DynamicsDemoViewController *controller;
 }
 
@@ -22,18 +21,18 @@
 {
     controller = viewController;
     
-    view = [viewController shapeViewInCenterWithSize:CGSizeMake(100, 30)];
-    gravity = [[UIGravityBehavior alloc] initWithItems:@[view]];
+    ShapeView *view = [controller shapeViewInCenterWithSize:CGSizeMake(100, 30)];
+    snap = [[UISnapBehavior alloc] initWithItem:view snapToPoint:CGPointMake(160, 220)];
 }
 
 - (void)activate
 {
-    [controller.dynamicAnimator addBehavior:gravity];
+    [controller.dynamicAnimator addBehavior:snap];
 }
 
 - (NSString*)demoTitle
 {
-    return @"Gravity";
+    return @"Snap";
 }
 
 @end

@@ -13,7 +13,7 @@
 @interface DynamicsDemo : NSObject
 
 - (void)configureViewsInController:(DynamicsDemoViewController*)viewController;
-- (void)tapped;
+- (void)activate;
 - (NSString*)demoTitle;
 
 @end

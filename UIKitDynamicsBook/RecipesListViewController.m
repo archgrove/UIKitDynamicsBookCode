@@ -10,6 +10,7 @@
 
 // The recipe classes
 #import "ViewBounceInViewController.h"
+#import "DraggableImageViewController.h"
 #import "SpecularButtonViewController.h"
 
 @implementation RecipesListViewController
@@ -24,10 +25,12 @@
     
     recipes = @[
                  [ViewBounceInViewController class],
+                 [DraggableImageViewController class],
                  [SpecularButtonViewController class],
                ];
     recipeTitles = @[
                      @"Bounce-in menu",
+                     @"Draggable image",
                      @"Specular background"
                     ];
     

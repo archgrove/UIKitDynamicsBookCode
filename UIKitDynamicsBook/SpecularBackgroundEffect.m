@@ -10,6 +10,7 @@
 
 inline static CGFloat interpolate(CGFloat source, CGFloat dest, float factor)
 {
+    // Standard linear interpolation
     return (source * (1 - factor)) + (dest * factor);
 }
 
@@ -37,28 +38,9 @@ inline static CGFloat interpolate(CGFloat source, CGFloat dest, float factor)
         _lightNormalX = x;
         _lightNormalY = y;
         
-        // We need to extract the colours, independent of colour space
-        if (![_backgroundColor getRed:&bR green:&bG blue:&bB alpha:&bA])
-        {
-            CGFloat white;
-            
-            [_backgroundColor getWhite:&white alpha:&bA];
-            
-            bR = white;
-            bG = white;
-            bB = white;
-        }
-        
-        if (![_specularColor getRed:&sR green:&sG blue:&sB alpha:&sA])
-        {
-            CGFloat white;
-            
-            [_specularColor getWhite:&white alpha:&sA];
-            
-            sR = white;
-            sG = white;
-            sB = white;
-        }
+        // To speed up the calculations, we pre-fetch the components of each colour
+        [self getColourComponents:_backgroundColor r:&bR g:&bG b:&bB a:&bA];
+        [self getColourComponents:_specularColor r:&sR g:&sG b:&sB a:&sA];
     }
     
     return self;
@@ -71,7 +53,6 @@ inline static CGFloat interpolate(CGFloat source, CGFloat dest, float factor)
     float intensity = pow((viewerOffset.horizontal * self.lightNormalX) +
                           (viewerOffset.vertical * self.lightNormalY), 2);
     
-    NSLog(@"Intensity: %f", intensity);
     UIColor *c = [UIColor colorWithRed:interpolate(bR, sR, intensity)
                                  green:interpolate(bG, sG, intensity)
                                   blue:interpolate(bB, sB, intensity)
@@ -81,5 +62,19 @@ inline static CGFloat interpolate(CGFloat source, CGFloat dest, float factor)
     return @{ @"backgroundColor" : c };
 }
 
+- (void) getColourComponents:(UIColor *)col r:(CGFloat *)r g:(CGFloat *)g b:(CGFloat *)b a:(CGFloat *)a
+{
+    // Extract colour components from either an RGB or greyscale colour space
+    if (![col getRed:r green:g blue:b alpha:a])
+    {
+        CGFloat white;
+        
+        [col getWhite:&white alpha:a];
+        
+        *r = white;
+        *g = white;
+        *b = white;
+    }
+}
 
 @end

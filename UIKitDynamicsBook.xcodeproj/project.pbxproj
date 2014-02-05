@@ -40,6 +40,7 @@
 		07FC78FE18A260CE00D1E4A7 /* ViewBounceInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07FC78FD18A260CE00D1E4A7 /* ViewBounceInViewController.m */; };
 		07FC790118A26A3000D1E4A7 /* SpecularButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07FC790018A26A3000D1E4A7 /* SpecularButtonViewController.m */; };
 		07FC790418A26A7300D1E4A7 /* SpecularBackgroundEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 07FC790318A26A7300D1E4A7 /* SpecularBackgroundEffect.m */; };
+		07FC790B18A285B700D1E4A7 /* DraggableImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07FC790A18A285B700D1E4A7 /* DraggableImageViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,6 +111,8 @@
 		07FC790018A26A3000D1E4A7 /* SpecularButtonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpecularButtonViewController.m; sourceTree = "<group>"; };
 		07FC790218A26A7300D1E4A7 /* SpecularBackgroundEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpecularBackgroundEffect.h; sourceTree = "<group>"; };
 		07FC790318A26A7300D1E4A7 /* SpecularBackgroundEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpecularBackgroundEffect.m; sourceTree = "<group>"; };
+		07FC790918A285B700D1E4A7 /* DraggableImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DraggableImageViewController.h; sourceTree = "<group>"; };
+		07FC790A18A285B700D1E4A7 /* DraggableImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DraggableImageViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -269,6 +272,7 @@
 		07FC78F618A24D2900D1E4A7 /* Recipe Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				07FC790818A2853500D1E4A7 /* Collapsing view controller */,
 				07FC78FB18A24DA200D1E4A7 /* View bounce in */,
 				07FC78FA18A24D6F00D1E4A7 /* Specular button */,
 				07FC78F918A24D6100D1E4A7 /* Draggable image view */,
@@ -287,6 +291,8 @@
 		07FC78F918A24D6100D1E4A7 /* Draggable image view */ = {
 			isa = PBXGroup;
 			children = (
+				07FC790918A285B700D1E4A7 /* DraggableImageViewController.h */,
+				07FC790A18A285B700D1E4A7 /* DraggableImageViewController.m */,
 			);
 			name = "Draggable image view";
 			sourceTree = "<group>";
@@ -309,6 +315,13 @@
 				07FC78FD18A260CE00D1E4A7 /* ViewBounceInViewController.m */,
 			);
 			name = "View bounce in";
+			sourceTree = "<group>";
+		};
+		07FC790818A2853500D1E4A7 /* Collapsing view controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Collapsing view controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -422,6 +435,7 @@
 				0772A32A18982DDF0065920F /* ImpulsePush.m in Sources */,
 				0772A31D18981E1F0065920F /* DynamicsDemo.m in Sources */,
 				07FC78F518A24A0F00D1E4A7 /* RecipesListViewController.m in Sources */,
+				07FC790B18A285B700D1E4A7 /* DraggableImageViewController.m in Sources */,
 				0772A336189919D30065920F /* SnapDemo.m in Sources */,
 				0772A333189912410065920F /* AttachmentPoint1.m in Sources */,
 				07FC78FE18A260CE00D1E4A7 /* ViewBounceInViewController.m in Sources */,

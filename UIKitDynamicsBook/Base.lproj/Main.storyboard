@@ -8,7 +8,7 @@
         <scene sceneID="cUi-kZ-frf">
             <objects>
                 <navigationController id="rS3-R9-Ivy" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Behavior demos" id="7Sf-7e-gmL"/>
+                    <tabBarItem key="tabBarItem" title="Behavior demos" image="Demos" id="7Sf-7e-gmL"/>
                     <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="yXu-0R-QUA">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -43,7 +43,7 @@
             </objects>
             <point key="canvasLocation" x="-352" y="790"/>
         </scene>
-        <!--Recipes List View Controller - Root View Controller-->
+        <!--Recipes List View Controller - Recipes-->
         <scene sceneID="y77-Jf-bxu">
             <objects>
                 <tableViewController id="6Fp-S4-aUf" customClass="RecipesListViewController" sceneMemberID="viewController">
@@ -62,16 +62,17 @@
                                         <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="EYj-GR-XI0">
                                             <rect key="frame" x="15" y="0.0" width="270" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableViewCell>
                         </prototypes>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="ieJ-YZ-Hc3"/>
+                    <navigationItem key="navigationItem" title="Recipes" id="ieJ-YZ-Hc3"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z8O-Yo-cLR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -81,7 +82,7 @@
         <scene sceneID="wE5-w9-td7">
             <objects>
                 <navigationController definesPresentationContext="YES" id="8D0-I8-V2z" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Recipes" id="Dzl-rq-g1W"/>
+                    <tabBarItem key="tabBarItem" title="Recipes" image="Recipes" id="Dzl-rq-g1W"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="OOW-d2-PCd">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -156,6 +157,10 @@
             <point key="canvasLocation" x="902" y="64"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Demos" width="25" height="25"/>
+        <image name="Recipes" width="25" height="25"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

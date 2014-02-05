@@ -8,18 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		0772A31D18981E1F0065920F /* DynamicsDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 0772A31C18981E1F0065920F /* DynamicsDemo.m */; };
-		0772A321189821700065920F /* GravityDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 0772A320189821700065920F /* GravityDemo.m */; };
-		0772A324189826090065920F /* CollisionBehaviorDemo1.m in Sources */ = {isa = PBXBuildFile; fileRef = 0772A323189826090065920F /* CollisionBehaviorDemo1.m */; };
-		0772A327189828140065920F /* CollisionBehaviorDemo2.m in Sources */ = {isa = PBXBuildFile; fileRef = 0772A326189828140065920F /* CollisionBehaviorDemo2.m */; };
-		0772A32A18982DDF0065920F /* ImpulsePush.m in Sources */ = {isa = PBXBuildFile; fileRef = 0772A32918982DDF0065920F /* ImpulsePush.m */; };
-		0772A32D189910EB0065920F /* ContinuousPush.m in Sources */ = {isa = PBXBuildFile; fileRef = 0772A32B189910EB0065920F /* ContinuousPush.m */; };
-		0772A332189912410065920F /* AttachmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0772A32E189912410065920F /* AttachmentView.m */; };
-		0772A333189912410065920F /* AttachmentPoint1.m in Sources */ = {isa = PBXBuildFile; fileRef = 0772A330189912410065920F /* AttachmentPoint1.m */; };
-		0772A336189919D30065920F /* SnapDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 0772A334189919D30065920F /* SnapDemo.m */; };
 		0772A339189931520065920F /* GridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0772A338189931520065920F /* GridView.m */; };
-		0772A33C189936CE0065920F /* CollisionBehaviorDemo3.m in Sources */ = {isa = PBXBuildFile; fileRef = 0772A33A189936CE0065920F /* CollisionBehaviorDemo3.m */; };
-		0772A33F189939D10065920F /* AttachmentPoint2.m in Sources */ = {isa = PBXBuildFile; fileRef = 0772A33D189939D10065920F /* AttachmentPoint2.m */; };
-		0772A34218993AC70065920F /* ContinuousPushOffCentre.m in Sources */ = {isa = PBXBuildFile; fileRef = 0772A34018993AC70065920F /* ContinuousPushOffCentre.m */; };
+		07B0D9C118A29ECB00B46DF0 /* AttachmentPoint1.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B0D9B518A29ECB00B46DF0 /* AttachmentPoint1.m */; };
+		07B0D9C218A29ECB00B46DF0 /* AttachmentPoint2.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B0D9B618A29ECB00B46DF0 /* AttachmentPoint2.m */; };
+		07B0D9C318A29ECB00B46DF0 /* AttachmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B0D9B718A29ECB00B46DF0 /* AttachmentView.m */; };
+		07B0D9C418A29ECB00B46DF0 /* BehaviorDemosListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B0D9B818A29ECB00B46DF0 /* BehaviorDemosListViewController.m */; };
+		07B0D9C518A29ECB00B46DF0 /* CollisionBehaviorDemo1.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B0D9B918A29ECB00B46DF0 /* CollisionBehaviorDemo1.m */; };
+		07B0D9C618A29ECB00B46DF0 /* CollisionBehaviorDemo2.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B0D9BA18A29ECB00B46DF0 /* CollisionBehaviorDemo2.m */; };
+		07B0D9C718A29ECB00B46DF0 /* CollisionBehaviorDemo3.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B0D9BB18A29ECB00B46DF0 /* CollisionBehaviorDemo3.m */; };
+		07B0D9C818A29ECB00B46DF0 /* ContinuousPush.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B0D9BC18A29ECB00B46DF0 /* ContinuousPush.m */; };
+		07B0D9C918A29ECB00B46DF0 /* ContinuousPushOffCentre.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B0D9BD18A29ECB00B46DF0 /* ContinuousPushOffCentre.m */; };
+		07B0D9CA18A29ECB00B46DF0 /* GravityDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B0D9BE18A29ECB00B46DF0 /* GravityDemo.m */; };
+		07B0D9CB18A29ECB00B46DF0 /* ImpulsePush.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B0D9BF18A29ECB00B46DF0 /* ImpulsePush.m */; };
+		07B0D9CC18A29ECB00B46DF0 /* SnapDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B0D9C018A29ECB00B46DF0 /* SnapDemo.m */; };
+		07B0D9D018A29EDC00B46DF0 /* ViewBounceInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B0D9CF18A29EDC00B46DF0 /* ViewBounceInViewController.m */; };
+		07B0D9D318A29EE200B46DF0 /* DraggableImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B0D9D218A29EE200B46DF0 /* DraggableImageViewController.m */; };
+		07B0D9D818A29EEA00B46DF0 /* SpecularBackgroundEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B0D9D518A29EEA00B46DF0 /* SpecularBackgroundEffect.m */; };
+		07B0D9D918A29EEA00B46DF0 /* SpecularButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B0D9D718A29EEA00B46DF0 /* SpecularButtonViewController.m */; };
 		07EB426417ABB51E0067F348 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07EB426317ABB51E0067F348 /* Foundation.framework */; };
 		07EB426617ABB51E0067F348 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07EB426517ABB51E0067F348 /* CoreGraphics.framework */; };
 		07EB426817ABB51E0067F348 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07EB426717ABB51E0067F348 /* UIKit.framework */; };
@@ -27,7 +32,6 @@
 		07EB427017ABB51E0067F348 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 07EB426F17ABB51E0067F348 /* main.m */; };
 		07EB427417ABB51E0067F348 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 07EB427317ABB51E0067F348 /* AppDelegate.m */; };
 		07EB427717ABB51E0067F348 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07EB427517ABB51E0067F348 /* Main.storyboard */; };
-		07EB427A17ABB51E0067F348 /* BehaviorDemosListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07EB427917ABB51E0067F348 /* BehaviorDemosListViewController.m */; };
 		07EB427D17ABB51E0067F348 /* DynamicsDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07EB427C17ABB51E0067F348 /* DynamicsDemoViewController.m */; };
 		07EB427F17ABB51E0067F348 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07EB427E17ABB51E0067F348 /* Images.xcassets */; };
 		07EB428617ABB51E0067F348 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07EB428517ABB51E0067F348 /* XCTest.framework */; };
@@ -37,10 +41,6 @@
 		07EB429217ABB51E0067F348 /* UIKitDynamicsBookTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 07EB429117ABB51E0067F348 /* UIKitDynamicsBookTests.m */; };
 		07EB429D17AC1A5C0067F348 /* ShapeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 07EB429C17AC1A5C0067F348 /* ShapeView.m */; };
 		07FC78F518A24A0F00D1E4A7 /* RecipesListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07FC78F418A24A0F00D1E4A7 /* RecipesListViewController.m */; };
-		07FC78FE18A260CE00D1E4A7 /* ViewBounceInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07FC78FD18A260CE00D1E4A7 /* ViewBounceInViewController.m */; };
-		07FC790118A26A3000D1E4A7 /* SpecularButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07FC790018A26A3000D1E4A7 /* SpecularButtonViewController.m */; };
-		07FC790418A26A7300D1E4A7 /* SpecularBackgroundEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 07FC790318A26A7300D1E4A7 /* SpecularBackgroundEffect.m */; };
-		07FC790B18A285B700D1E4A7 /* DraggableImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07FC790A18A285B700D1E4A7 /* DraggableImageViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,30 +56,40 @@
 /* Begin PBXFileReference section */
 		0772A31B18981E1F0065920F /* DynamicsDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicsDemo.h; sourceTree = "<group>"; };
 		0772A31C18981E1F0065920F /* DynamicsDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicsDemo.m; sourceTree = "<group>"; };
-		0772A31F189821700065920F /* GravityDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GravityDemo.h; sourceTree = "<group>"; };
-		0772A320189821700065920F /* GravityDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GravityDemo.m; sourceTree = "<group>"; };
-		0772A322189826090065920F /* CollisionBehaviorDemo1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollisionBehaviorDemo1.h; sourceTree = "<group>"; };
-		0772A323189826090065920F /* CollisionBehaviorDemo1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollisionBehaviorDemo1.m; sourceTree = "<group>"; };
-		0772A325189828140065920F /* CollisionBehaviorDemo2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollisionBehaviorDemo2.h; sourceTree = "<group>"; };
-		0772A326189828140065920F /* CollisionBehaviorDemo2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollisionBehaviorDemo2.m; sourceTree = "<group>"; };
-		0772A32818982DDF0065920F /* ImpulsePush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImpulsePush.h; sourceTree = "<group>"; };
-		0772A32918982DDF0065920F /* ImpulsePush.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImpulsePush.m; sourceTree = "<group>"; };
-		0772A32B189910EB0065920F /* ContinuousPush.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContinuousPush.m; sourceTree = "<group>"; };
-		0772A32C189910EB0065920F /* ContinuousPush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContinuousPush.h; sourceTree = "<group>"; };
-		0772A32E189912410065920F /* AttachmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttachmentView.m; sourceTree = "<group>"; };
-		0772A32F189912410065920F /* AttachmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttachmentView.h; sourceTree = "<group>"; };
-		0772A330189912410065920F /* AttachmentPoint1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttachmentPoint1.m; sourceTree = "<group>"; };
-		0772A331189912410065920F /* AttachmentPoint1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttachmentPoint1.h; sourceTree = "<group>"; };
-		0772A334189919D30065920F /* SnapDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SnapDemo.m; sourceTree = "<group>"; };
-		0772A335189919D30065920F /* SnapDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnapDemo.h; sourceTree = "<group>"; };
 		0772A337189931520065920F /* GridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GridView.h; path = ../GridView.h; sourceTree = "<group>"; };
 		0772A338189931520065920F /* GridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GridView.m; path = ../GridView.m; sourceTree = "<group>"; };
-		0772A33A189936CE0065920F /* CollisionBehaviorDemo3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollisionBehaviorDemo3.m; sourceTree = "<group>"; };
-		0772A33B189936CE0065920F /* CollisionBehaviorDemo3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollisionBehaviorDemo3.h; sourceTree = "<group>"; };
-		0772A33D189939D10065920F /* AttachmentPoint2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttachmentPoint2.m; sourceTree = "<group>"; };
-		0772A33E189939D10065920F /* AttachmentPoint2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttachmentPoint2.h; sourceTree = "<group>"; };
-		0772A34018993AC70065920F /* ContinuousPushOffCentre.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContinuousPushOffCentre.m; sourceTree = "<group>"; };
-		0772A34118993AC70065920F /* ContinuousPushOffCentre.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContinuousPushOffCentre.h; sourceTree = "<group>"; };
+		07B0D9A918A29ECB00B46DF0 /* AttachmentPoint1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AttachmentPoint1.h; path = Demos/AttachmentPoint1.h; sourceTree = "<group>"; };
+		07B0D9AA18A29ECB00B46DF0 /* AttachmentPoint2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AttachmentPoint2.h; path = Demos/AttachmentPoint2.h; sourceTree = "<group>"; };
+		07B0D9AB18A29ECB00B46DF0 /* AttachmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AttachmentView.h; path = Demos/AttachmentView.h; sourceTree = "<group>"; };
+		07B0D9AC18A29ECB00B46DF0 /* BehaviorDemosListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BehaviorDemosListViewController.h; path = Demos/BehaviorDemosListViewController.h; sourceTree = "<group>"; };
+		07B0D9AD18A29ECB00B46DF0 /* CollisionBehaviorDemo1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CollisionBehaviorDemo1.h; path = Demos/CollisionBehaviorDemo1.h; sourceTree = "<group>"; };
+		07B0D9AE18A29ECB00B46DF0 /* CollisionBehaviorDemo2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CollisionBehaviorDemo2.h; path = Demos/CollisionBehaviorDemo2.h; sourceTree = "<group>"; };
+		07B0D9AF18A29ECB00B46DF0 /* CollisionBehaviorDemo3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CollisionBehaviorDemo3.h; path = Demos/CollisionBehaviorDemo3.h; sourceTree = "<group>"; };
+		07B0D9B018A29ECB00B46DF0 /* ContinuousPush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ContinuousPush.h; path = Demos/ContinuousPush.h; sourceTree = "<group>"; };
+		07B0D9B118A29ECB00B46DF0 /* ContinuousPushOffCentre.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ContinuousPushOffCentre.h; path = Demos/ContinuousPushOffCentre.h; sourceTree = "<group>"; };
+		07B0D9B218A29ECB00B46DF0 /* GravityDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GravityDemo.h; path = Demos/GravityDemo.h; sourceTree = "<group>"; };
+		07B0D9B318A29ECB00B46DF0 /* ImpulsePush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImpulsePush.h; path = Demos/ImpulsePush.h; sourceTree = "<group>"; };
+		07B0D9B418A29ECB00B46DF0 /* SnapDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SnapDemo.h; path = Demos/SnapDemo.h; sourceTree = "<group>"; };
+		07B0D9B518A29ECB00B46DF0 /* AttachmentPoint1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AttachmentPoint1.m; path = Demos/AttachmentPoint1.m; sourceTree = "<group>"; };
+		07B0D9B618A29ECB00B46DF0 /* AttachmentPoint2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AttachmentPoint2.m; path = Demos/AttachmentPoint2.m; sourceTree = "<group>"; };
+		07B0D9B718A29ECB00B46DF0 /* AttachmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AttachmentView.m; path = Demos/AttachmentView.m; sourceTree = "<group>"; };
+		07B0D9B818A29ECB00B46DF0 /* BehaviorDemosListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BehaviorDemosListViewController.m; path = Demos/BehaviorDemosListViewController.m; sourceTree = "<group>"; };
+		07B0D9B918A29ECB00B46DF0 /* CollisionBehaviorDemo1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CollisionBehaviorDemo1.m; path = Demos/CollisionBehaviorDemo1.m; sourceTree = "<group>"; };
+		07B0D9BA18A29ECB00B46DF0 /* CollisionBehaviorDemo2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CollisionBehaviorDemo2.m; path = Demos/CollisionBehaviorDemo2.m; sourceTree = "<group>"; };
+		07B0D9BB18A29ECB00B46DF0 /* CollisionBehaviorDemo3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CollisionBehaviorDemo3.m; path = Demos/CollisionBehaviorDemo3.m; sourceTree = "<group>"; };
+		07B0D9BC18A29ECB00B46DF0 /* ContinuousPush.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ContinuousPush.m; path = Demos/ContinuousPush.m; sourceTree = "<group>"; };
+		07B0D9BD18A29ECB00B46DF0 /* ContinuousPushOffCentre.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ContinuousPushOffCentre.m; path = Demos/ContinuousPushOffCentre.m; sourceTree = "<group>"; };
+		07B0D9BE18A29ECB00B46DF0 /* GravityDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GravityDemo.m; path = Demos/GravityDemo.m; sourceTree = "<group>"; };
+		07B0D9BF18A29ECB00B46DF0 /* ImpulsePush.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ImpulsePush.m; path = Demos/ImpulsePush.m; sourceTree = "<group>"; };
+		07B0D9C018A29ECB00B46DF0 /* SnapDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SnapDemo.m; path = Demos/SnapDemo.m; sourceTree = "<group>"; };
+		07B0D9CE18A29EDC00B46DF0 /* ViewBounceInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewBounceInViewController.h; path = Recipes/BounceIn/ViewBounceInViewController.h; sourceTree = "<group>"; };
+		07B0D9CF18A29EDC00B46DF0 /* ViewBounceInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewBounceInViewController.m; path = Recipes/BounceIn/ViewBounceInViewController.m; sourceTree = "<group>"; };
+		07B0D9D118A29EE200B46DF0 /* DraggableImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DraggableImageViewController.h; path = Recipes/DraggableImage/DraggableImageViewController.h; sourceTree = "<group>"; };
+		07B0D9D218A29EE200B46DF0 /* DraggableImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DraggableImageViewController.m; path = Recipes/DraggableImage/DraggableImageViewController.m; sourceTree = "<group>"; };
+		07B0D9D418A29EEA00B46DF0 /* SpecularBackgroundEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpecularBackgroundEffect.h; path = Recipes/SpecularBackground/SpecularBackgroundEffect.h; sourceTree = "<group>"; };
+		07B0D9D518A29EEA00B46DF0 /* SpecularBackgroundEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SpecularBackgroundEffect.m; path = Recipes/SpecularBackground/SpecularBackgroundEffect.m; sourceTree = "<group>"; };
+		07B0D9D618A29EEA00B46DF0 /* SpecularButtonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpecularButtonViewController.h; path = Recipes/SpecularBackground/SpecularButtonViewController.h; sourceTree = "<group>"; };
+		07B0D9D718A29EEA00B46DF0 /* SpecularButtonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SpecularButtonViewController.m; path = Recipes/SpecularBackground/SpecularButtonViewController.m; sourceTree = "<group>"; };
 		07EB426017ABB51E0067F348 /* UIKitDynamicsBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitDynamicsBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07EB426317ABB51E0067F348 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		07EB426517ABB51E0067F348 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -91,8 +101,6 @@
 		07EB427217ABB51E0067F348 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		07EB427317ABB51E0067F348 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		07EB427617ABB51E0067F348 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		07EB427817ABB51E0067F348 /* BehaviorDemosListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BehaviorDemosListViewController.h; sourceTree = "<group>"; };
-		07EB427917ABB51E0067F348 /* BehaviorDemosListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BehaviorDemosListViewController.m; sourceTree = "<group>"; };
 		07EB427B17ABB51E0067F348 /* DynamicsDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DynamicsDemoViewController.h; sourceTree = "<group>"; };
 		07EB427C17ABB51E0067F348 /* DynamicsDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DynamicsDemoViewController.m; sourceTree = "<group>"; };
 		07EB427E17ABB51E0067F348 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -105,14 +113,6 @@
 		07EB429C17AC1A5C0067F348 /* ShapeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShapeView.m; sourceTree = "<group>"; };
 		07FC78F318A24A0F00D1E4A7 /* RecipesListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipesListViewController.h; sourceTree = "<group>"; };
 		07FC78F418A24A0F00D1E4A7 /* RecipesListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipesListViewController.m; sourceTree = "<group>"; };
-		07FC78FC18A260CE00D1E4A7 /* ViewBounceInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewBounceInViewController.h; sourceTree = "<group>"; };
-		07FC78FD18A260CE00D1E4A7 /* ViewBounceInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewBounceInViewController.m; sourceTree = "<group>"; };
-		07FC78FF18A26A3000D1E4A7 /* SpecularButtonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpecularButtonViewController.h; sourceTree = "<group>"; };
-		07FC790018A26A3000D1E4A7 /* SpecularButtonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpecularButtonViewController.m; sourceTree = "<group>"; };
-		07FC790218A26A7300D1E4A7 /* SpecularBackgroundEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpecularBackgroundEffect.h; sourceTree = "<group>"; };
-		07FC790318A26A7300D1E4A7 /* SpecularBackgroundEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpecularBackgroundEffect.m; sourceTree = "<group>"; };
-		07FC790918A285B700D1E4A7 /* DraggableImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DraggableImageViewController.h; sourceTree = "<group>"; };
-		07FC790A18A285B700D1E4A7 /* DraggableImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DraggableImageViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,22 +139,74 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0772A31E189821550065920F /* SimpleDemos */ = {
+		07B0D9A818A29EC000B46DF0 /* Demos */ = {
 			isa = PBXGroup;
 			children = (
-				07FC78F118A2487C00D1E4A7 /* Demos */,
-				07EB427817ABB51E0067F348 /* BehaviorDemosListViewController.h */,
-				07EB427917ABB51E0067F348 /* BehaviorDemosListViewController.m */,
-				07EB427B17ABB51E0067F348 /* DynamicsDemoViewController.h */,
-				07EB427C17ABB51E0067F348 /* DynamicsDemoViewController.m */,
-				0772A31B18981E1F0065920F /* DynamicsDemo.h */,
-				0772A31C18981E1F0065920F /* DynamicsDemo.m */,
-				07EB429B17AC1A5C0067F348 /* ShapeView.h */,
-				07EB429C17AC1A5C0067F348 /* ShapeView.m */,
-				0772A337189931520065920F /* GridView.h */,
-				0772A338189931520065920F /* GridView.m */,
+				07B0D9A918A29ECB00B46DF0 /* AttachmentPoint1.h */,
+				07B0D9AA18A29ECB00B46DF0 /* AttachmentPoint2.h */,
+				07B0D9AB18A29ECB00B46DF0 /* AttachmentView.h */,
+				07B0D9AC18A29ECB00B46DF0 /* BehaviorDemosListViewController.h */,
+				07B0D9AD18A29ECB00B46DF0 /* CollisionBehaviorDemo1.h */,
+				07B0D9AE18A29ECB00B46DF0 /* CollisionBehaviorDemo2.h */,
+				07B0D9AF18A29ECB00B46DF0 /* CollisionBehaviorDemo3.h */,
+				07B0D9B018A29ECB00B46DF0 /* ContinuousPush.h */,
+				07B0D9B118A29ECB00B46DF0 /* ContinuousPushOffCentre.h */,
+				07B0D9B218A29ECB00B46DF0 /* GravityDemo.h */,
+				07B0D9B318A29ECB00B46DF0 /* ImpulsePush.h */,
+				07B0D9B418A29ECB00B46DF0 /* SnapDemo.h */,
+				07B0D9B518A29ECB00B46DF0 /* AttachmentPoint1.m */,
+				07B0D9B618A29ECB00B46DF0 /* AttachmentPoint2.m */,
+				07B0D9B718A29ECB00B46DF0 /* AttachmentView.m */,
+				07B0D9B818A29ECB00B46DF0 /* BehaviorDemosListViewController.m */,
+				07B0D9B918A29ECB00B46DF0 /* CollisionBehaviorDemo1.m */,
+				07B0D9BA18A29ECB00B46DF0 /* CollisionBehaviorDemo2.m */,
+				07B0D9BB18A29ECB00B46DF0 /* CollisionBehaviorDemo3.m */,
+				07B0D9BC18A29ECB00B46DF0 /* ContinuousPush.m */,
+				07B0D9BD18A29ECB00B46DF0 /* ContinuousPushOffCentre.m */,
+				07B0D9BE18A29ECB00B46DF0 /* GravityDemo.m */,
+				07B0D9BF18A29ECB00B46DF0 /* ImpulsePush.m */,
+				07B0D9C018A29ECB00B46DF0 /* SnapDemo.m */,
 			);
-			name = SimpleDemos;
+			name = Demos;
+			sourceTree = "<group>";
+		};
+		07B0D9CD18A29ED300B46DF0 /* Recipes */ = {
+			isa = PBXGroup;
+			children = (
+				07B0D9DC18A29EFE00B46DF0 /* Draggable image */,
+				07B0D9DB18A29EFC00B46DF0 /* Specular background */,
+				07B0D9DA18A29EF100B46DF0 /* Bounce in view */,
+			);
+			name = Recipes;
+			sourceTree = "<group>";
+		};
+		07B0D9DA18A29EF100B46DF0 /* Bounce in view */ = {
+			isa = PBXGroup;
+			children = (
+				07B0D9CE18A29EDC00B46DF0 /* ViewBounceInViewController.h */,
+				07B0D9CF18A29EDC00B46DF0 /* ViewBounceInViewController.m */,
+			);
+			name = "Bounce in view";
+			sourceTree = "<group>";
+		};
+		07B0D9DB18A29EFC00B46DF0 /* Specular background */ = {
+			isa = PBXGroup;
+			children = (
+				07B0D9D418A29EEA00B46DF0 /* SpecularBackgroundEffect.h */,
+				07B0D9D518A29EEA00B46DF0 /* SpecularBackgroundEffect.m */,
+				07B0D9D618A29EEA00B46DF0 /* SpecularButtonViewController.h */,
+				07B0D9D718A29EEA00B46DF0 /* SpecularButtonViewController.m */,
+			);
+			name = "Specular background";
+			sourceTree = "<group>";
+		};
+		07B0D9DC18A29EFE00B46DF0 /* Draggable image */ = {
+			isa = PBXGroup;
+			children = (
+				07B0D9D118A29EE200B46DF0 /* DraggableImageViewController.h */,
+				07B0D9D218A29EE200B46DF0 /* DraggableImageViewController.m */,
+			);
+			name = "Draggable image";
 			sourceTree = "<group>";
 		};
 		07EB425717ABB51E0067F348 = {
@@ -190,11 +242,21 @@
 		07EB426917ABB51E0067F348 /* UIKitDynamicsBook */ = {
 			isa = PBXGroup;
 			children = (
-				07EB427517ABB51E0067F348 /* Main.storyboard */,
-				0772A31E189821550065920F /* SimpleDemos */,
-				07FC78F218A249E400D1E4A7 /* Recipes */,
+				07B0D9CD18A29ED300B46DF0 /* Recipes */,
+				07B0D9A818A29EC000B46DF0 /* Demos */,
+				07EB427B17ABB51E0067F348 /* DynamicsDemoViewController.h */,
+				07EB427C17ABB51E0067F348 /* DynamicsDemoViewController.m */,
+				0772A31B18981E1F0065920F /* DynamicsDemo.h */,
+				0772A31C18981E1F0065920F /* DynamicsDemo.m */,
+				07EB429B17AC1A5C0067F348 /* ShapeView.h */,
+				07EB429C17AC1A5C0067F348 /* ShapeView.m */,
+				0772A337189931520065920F /* GridView.h */,
+				0772A338189931520065920F /* GridView.m */,
+				07FC78F318A24A0F00D1E4A7 /* RecipesListViewController.h */,
+				07FC78F418A24A0F00D1E4A7 /* RecipesListViewController.m */,
 				07EB427217ABB51E0067F348 /* AppDelegate.h */,
 				07EB427317ABB51E0067F348 /* AppDelegate.m */,
+				07EB427517ABB51E0067F348 /* Main.storyboard */,
 				07EB427E17ABB51E0067F348 /* Images.xcassets */,
 				07EB426A17ABB51E0067F348 /* Supporting Files */,
 			);
@@ -228,100 +290,6 @@
 				07EB428E17ABB51E0067F348 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		07FC78F118A2487C00D1E4A7 /* Demos */ = {
-			isa = PBXGroup;
-			children = (
-				0772A31F189821700065920F /* GravityDemo.h */,
-				0772A320189821700065920F /* GravityDemo.m */,
-				0772A322189826090065920F /* CollisionBehaviorDemo1.h */,
-				0772A323189826090065920F /* CollisionBehaviorDemo1.m */,
-				0772A325189828140065920F /* CollisionBehaviorDemo2.h */,
-				0772A326189828140065920F /* CollisionBehaviorDemo2.m */,
-				0772A33B189936CE0065920F /* CollisionBehaviorDemo3.h */,
-				0772A33A189936CE0065920F /* CollisionBehaviorDemo3.m */,
-				0772A32E189912410065920F /* AttachmentView.m */,
-				0772A32F189912410065920F /* AttachmentView.h */,
-				0772A330189912410065920F /* AttachmentPoint1.m */,
-				0772A331189912410065920F /* AttachmentPoint1.h */,
-				0772A33D189939D10065920F /* AttachmentPoint2.m */,
-				0772A33E189939D10065920F /* AttachmentPoint2.h */,
-				0772A32818982DDF0065920F /* ImpulsePush.h */,
-				0772A32918982DDF0065920F /* ImpulsePush.m */,
-				0772A32C189910EB0065920F /* ContinuousPush.h */,
-				0772A32B189910EB0065920F /* ContinuousPush.m */,
-				0772A34018993AC70065920F /* ContinuousPushOffCentre.m */,
-				0772A34118993AC70065920F /* ContinuousPushOffCentre.h */,
-				0772A335189919D30065920F /* SnapDemo.h */,
-				0772A334189919D30065920F /* SnapDemo.m */,
-			);
-			name = Demos;
-			sourceTree = "<group>";
-		};
-		07FC78F218A249E400D1E4A7 /* Recipes */ = {
-			isa = PBXGroup;
-			children = (
-				07FC78F618A24D2900D1E4A7 /* Recipe Controllers */,
-				07FC78F318A24A0F00D1E4A7 /* RecipesListViewController.h */,
-				07FC78F418A24A0F00D1E4A7 /* RecipesListViewController.m */,
-			);
-			name = Recipes;
-			sourceTree = "<group>";
-		};
-		07FC78F618A24D2900D1E4A7 /* Recipe Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				07FC790818A2853500D1E4A7 /* Collapsing view controller */,
-				07FC78FB18A24DA200D1E4A7 /* View bounce in */,
-				07FC78FA18A24D6F00D1E4A7 /* Specular button */,
-				07FC78F918A24D6100D1E4A7 /* Draggable image view */,
-				07FC78F818A24D5400D1E4A7 /* Modal gravity */,
-			);
-			name = "Recipe Controllers";
-			sourceTree = "<group>";
-		};
-		07FC78F818A24D5400D1E4A7 /* Modal gravity */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "Modal gravity";
-			sourceTree = "<group>";
-		};
-		07FC78F918A24D6100D1E4A7 /* Draggable image view */ = {
-			isa = PBXGroup;
-			children = (
-				07FC790918A285B700D1E4A7 /* DraggableImageViewController.h */,
-				07FC790A18A285B700D1E4A7 /* DraggableImageViewController.m */,
-			);
-			name = "Draggable image view";
-			sourceTree = "<group>";
-		};
-		07FC78FA18A24D6F00D1E4A7 /* Specular button */ = {
-			isa = PBXGroup;
-			children = (
-				07FC78FF18A26A3000D1E4A7 /* SpecularButtonViewController.h */,
-				07FC790018A26A3000D1E4A7 /* SpecularButtonViewController.m */,
-				07FC790218A26A7300D1E4A7 /* SpecularBackgroundEffect.h */,
-				07FC790318A26A7300D1E4A7 /* SpecularBackgroundEffect.m */,
-			);
-			name = "Specular button";
-			sourceTree = "<group>";
-		};
-		07FC78FB18A24DA200D1E4A7 /* View bounce in */ = {
-			isa = PBXGroup;
-			children = (
-				07FC78FC18A260CE00D1E4A7 /* ViewBounceInViewController.h */,
-				07FC78FD18A260CE00D1E4A7 /* ViewBounceInViewController.m */,
-			);
-			name = "View bounce in";
-			sourceTree = "<group>";
-		};
-		07FC790818A2853500D1E4A7 /* Collapsing view controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "Collapsing view controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -421,29 +389,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07B0D9C418A29ECB00B46DF0 /* BehaviorDemosListViewController.m in Sources */,
+				07B0D9C818A29ECB00B46DF0 /* ContinuousPush.m in Sources */,
+				07B0D9CA18A29ECB00B46DF0 /* GravityDemo.m in Sources */,
 				07EB427417ABB51E0067F348 /* AppDelegate.m in Sources */,
-				07EB427A17ABB51E0067F348 /* BehaviorDemosListViewController.m in Sources */,
+				07B0D9D318A29EE200B46DF0 /* DraggableImageViewController.m in Sources */,
+				07B0D9C618A29ECB00B46DF0 /* CollisionBehaviorDemo2.m in Sources */,
+				07B0D9CB18A29ECB00B46DF0 /* ImpulsePush.m in Sources */,
+				07B0D9C118A29ECB00B46DF0 /* AttachmentPoint1.m in Sources */,
 				07EB429D17AC1A5C0067F348 /* ShapeView.m in Sources */,
-				0772A327189828140065920F /* CollisionBehaviorDemo2.m in Sources */,
-				0772A321189821700065920F /* GravityDemo.m in Sources */,
-				0772A33F189939D10065920F /* AttachmentPoint2.m in Sources */,
 				07EB427017ABB51E0067F348 /* main.m in Sources */,
-				0772A34218993AC70065920F /* ContinuousPushOffCentre.m in Sources */,
-				0772A324189826090065920F /* CollisionBehaviorDemo1.m in Sources */,
-				0772A33C189936CE0065920F /* CollisionBehaviorDemo3.m in Sources */,
-				0772A332189912410065920F /* AttachmentView.m in Sources */,
-				0772A32A18982DDF0065920F /* ImpulsePush.m in Sources */,
+				07B0D9CC18A29ECB00B46DF0 /* SnapDemo.m in Sources */,
+				07B0D9D918A29EEA00B46DF0 /* SpecularButtonViewController.m in Sources */,
+				07B0D9C918A29ECB00B46DF0 /* ContinuousPushOffCentre.m in Sources */,
 				0772A31D18981E1F0065920F /* DynamicsDemo.m in Sources */,
-				07FC78F518A24A0F00D1E4A7 /* RecipesListViewController.m in Sources */,
-				07FC790B18A285B700D1E4A7 /* DraggableImageViewController.m in Sources */,
-				0772A336189919D30065920F /* SnapDemo.m in Sources */,
-				0772A333189912410065920F /* AttachmentPoint1.m in Sources */,
-				07FC78FE18A260CE00D1E4A7 /* ViewBounceInViewController.m in Sources */,
-				07FC790418A26A7300D1E4A7 /* SpecularBackgroundEffect.m in Sources */,
+				07B0D9C718A29ECB00B46DF0 /* CollisionBehaviorDemo3.m in Sources */,
+				07B0D9C318A29ECB00B46DF0 /* AttachmentView.m in Sources */,
 				07EB427D17ABB51E0067F348 /* DynamicsDemoViewController.m in Sources */,
+				07FC78F518A24A0F00D1E4A7 /* RecipesListViewController.m in Sources */,
+				07B0D9D818A29EEA00B46DF0 /* SpecularBackgroundEffect.m in Sources */,
+				07B0D9D018A29EDC00B46DF0 /* ViewBounceInViewController.m in Sources */,
+				07B0D9C518A29ECB00B46DF0 /* CollisionBehaviorDemo1.m in Sources */,
+				07B0D9C218A29ECB00B46DF0 /* AttachmentPoint2.m in Sources */,
 				0772A339189931520065920F /* GridView.m in Sources */,
-				0772A32D189910EB0065920F /* ContinuousPush.m in Sources */,
-				07FC790118A26A3000D1E4A7 /* SpecularButtonViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

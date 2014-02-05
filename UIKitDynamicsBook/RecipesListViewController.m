@@ -9,9 +9,9 @@
 #import "RecipesListViewController.h"
 
 // The recipe classes
-#import "ViewBounceInViewController.h"
-#import "DraggableImageViewController.h"
-#import "SpecularButtonViewController.h"
+#import "Recipes/BounceIn/ViewBounceInViewController.h"
+#import "Recipes/DraggableImage/DraggableImageViewController.h"
+#import "Recipes/SpecularBackground/SpecularButtonViewController.h"
 
 @implementation RecipesListViewController
 {

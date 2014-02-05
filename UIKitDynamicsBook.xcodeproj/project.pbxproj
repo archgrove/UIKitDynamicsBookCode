@@ -38,6 +38,8 @@
 		07EB429D17AC1A5C0067F348 /* ShapeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 07EB429C17AC1A5C0067F348 /* ShapeView.m */; };
 		07FC78F518A24A0F00D1E4A7 /* RecipesListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07FC78F418A24A0F00D1E4A7 /* RecipesListViewController.m */; };
 		07FC78FE18A260CE00D1E4A7 /* ViewBounceInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07FC78FD18A260CE00D1E4A7 /* ViewBounceInViewController.m */; };
+		07FC790118A26A3000D1E4A7 /* SpecularButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07FC790018A26A3000D1E4A7 /* SpecularButtonViewController.m */; };
+		07FC790418A26A7300D1E4A7 /* SpecularBackgroundEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 07FC790318A26A7300D1E4A7 /* SpecularBackgroundEffect.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +106,10 @@
 		07FC78F418A24A0F00D1E4A7 /* RecipesListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipesListViewController.m; sourceTree = "<group>"; };
 		07FC78FC18A260CE00D1E4A7 /* ViewBounceInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewBounceInViewController.h; sourceTree = "<group>"; };
 		07FC78FD18A260CE00D1E4A7 /* ViewBounceInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewBounceInViewController.m; sourceTree = "<group>"; };
+		07FC78FF18A26A3000D1E4A7 /* SpecularButtonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpecularButtonViewController.h; sourceTree = "<group>"; };
+		07FC790018A26A3000D1E4A7 /* SpecularButtonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpecularButtonViewController.m; sourceTree = "<group>"; };
+		07FC790218A26A7300D1E4A7 /* SpecularBackgroundEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpecularBackgroundEffect.h; sourceTree = "<group>"; };
+		07FC790318A26A7300D1E4A7 /* SpecularBackgroundEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpecularBackgroundEffect.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -288,6 +294,10 @@
 		07FC78FA18A24D6F00D1E4A7 /* Specular button */ = {
 			isa = PBXGroup;
 			children = (
+				07FC78FF18A26A3000D1E4A7 /* SpecularButtonViewController.h */,
+				07FC790018A26A3000D1E4A7 /* SpecularButtonViewController.m */,
+				07FC790218A26A7300D1E4A7 /* SpecularBackgroundEffect.h */,
+				07FC790318A26A7300D1E4A7 /* SpecularBackgroundEffect.m */,
 			);
 			name = "Specular button";
 			sourceTree = "<group>";
@@ -415,9 +425,11 @@
 				0772A336189919D30065920F /* SnapDemo.m in Sources */,
 				0772A333189912410065920F /* AttachmentPoint1.m in Sources */,
 				07FC78FE18A260CE00D1E4A7 /* ViewBounceInViewController.m in Sources */,
+				07FC790418A26A7300D1E4A7 /* SpecularBackgroundEffect.m in Sources */,
 				07EB427D17ABB51E0067F348 /* DynamicsDemoViewController.m in Sources */,
 				0772A339189931520065920F /* GridView.m in Sources */,
 				0772A32D189910EB0065920F /* ContinuousPush.m in Sources */,
+				07FC790118A26A3000D1E4A7 /* SpecularButtonViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

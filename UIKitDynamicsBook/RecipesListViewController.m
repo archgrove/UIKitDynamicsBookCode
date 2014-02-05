@@ -10,6 +10,7 @@
 
 // The recipe classes
 #import "ViewBounceInViewController.h"
+#import "SpecularButtonViewController.h"
 
 @implementation RecipesListViewController
 {
@@ -21,8 +22,14 @@
 {
     [super viewDidLoad];
     
-    recipes = @[ [ViewBounceInViewController class] ];
-    recipeTitles = @[ @"Bounce-in menu" ];
+    recipes = @[
+                 [ViewBounceInViewController class],
+                 [SpecularButtonViewController class],
+               ];
+    recipeTitles = @[
+                     @"Bounce-in menu",
+                     @"Specular background"
+                    ];
     
     NSAssert(recipes.count == recipeTitles.count, @"Must have the number of recipes as titles");
 }

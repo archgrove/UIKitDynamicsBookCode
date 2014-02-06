@@ -58,8 +58,8 @@
         
         // Add a boundary at the bottom of the screen
         CGSize screenSize = [UIScreen mainScreen].bounds.size;
-        baselineStart = CGPointMake(0, screenSize.height);
-        baselineEnd = CGPointMake(screenSize.width, screenSize.height);
+        baselineStart = CGPointMake(0, screenSize.height + 0.5);
+        baselineEnd = CGPointMake(screenSize.width, screenSize.height + 0.5);
         
         collisionBehavior = [[UICollisionBehavior alloc] initWithItems:@[modalView]];
         [collisionBehavior addBoundaryWithIdentifier:@"Bottom" fromPoint:baselineStart toPoint:baselineEnd];
@@ -98,15 +98,7 @@
         
         /*
           We need to compute how long the controller will take to fall up or down the screen
-        
-         Acceleration is GravityStrength p/s
-         The screen is ScreenHeightps
-         
-         Calculus says GravityStrength * t is the velocity, so
-         
-           x = GravityStrength/2 t^2
-         
-          is the time to reach x ps, thus
+          A little bit of integration on the normal acceleration equation, gives us:
          
                ScreenHeight = GravityStrength / 2 t^2
           =>  sqrt(ScreenHeight * 2 / GravityStrength) = t
@@ -128,11 +120,6 @@
 
 - (void)dynamicAnimatorDidPause:(UIDynamicAnimator *)animator
 {
-    // The animator will sometimes leave the final view controller on a fractional pixel boundary; fix that here
-    UIView *modalView = [_transitionContext viewControllerForKey:UITransitionContextToViewControllerKey].view;
-    CGRect frame = modalView.frame;
-    modalView.frame = CGRectMake((int)frame.origin.x, (int)frame.origin.y, frame.size.width, frame.size.height);
-    
     [_transitionContext completeTransition:YES];
 }
 
@@ -144,7 +131,7 @@
     
     for (int i = 0; i < self.smokePointsCount; i++)
     {
-        CGPoint spawnPoint = CGPointMake(pointDistance * i, baselineStart.y);
+        CGPoint spawnPoint = CGPointMake(pointDistance * i + (pointDistance / 2), baselineStart.y);
         
         UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Smoke"]];
         imageView.center = spawnPoint;

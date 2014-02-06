@@ -40,18 +40,14 @@
 
 - (void)setLabelText:(NSString *)labelText
 {
-    [self willChangeValueForKey:@"labelText"];
     _labelText = labelText;
-    [self didChangeValueForKey:@"labelText"];
     
     label.text = labelText;
 }
 
 - (void)setLabelColor:(UIColor*)labelColor
 {
-    [self willChangeValueForKey:@"labelColor"];
     _labelColor = labelColor;
-    [self didChangeValueForKey:@"labelColor"];
     
     label.textColor = labelColor;
 }

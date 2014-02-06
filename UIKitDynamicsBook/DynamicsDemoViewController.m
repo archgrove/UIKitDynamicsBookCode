@@ -45,7 +45,7 @@
 {
     [super viewDidAppear:animated];
     
-    [self performSelector:@selector(tapped:) withObject:self afterDelay:3];
+    [self performSelector:@selector(tapped:) withObject:self afterDelay:1];
 }
 
 - (void)setDynamicsDemo:(DynamicsDemo*)demo
@@ -53,9 +53,7 @@
     for (int i = 0; i < self.view.subviews.count; i++)
         [self.view.subviews[0] removeFromSuperview];
     
-    [self willChangeValueForKey:@"dynamicsDemo"];
     _dynamicsDemo = demo;
-    [self didChangeValueForKey:@"dynamicsDemo"];
     
     [self.dynamicsDemo configureViewsInController:self];
     self.navigationItem.title = self.dynamicsDemo.demoTitle;

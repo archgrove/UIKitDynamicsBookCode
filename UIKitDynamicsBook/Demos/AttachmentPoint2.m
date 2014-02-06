@@ -24,6 +24,10 @@
     ShapeView *view = [controller shapeViewInCenterWithSize:CGSizeMake(100, 30)];
     view.center = CGPointMake(100, 100);
     
+    ShapeView *anchor = [controller shapeViewInCenterWithSize:CGSizeMake(10, 10)];
+    anchor.labelText = @"";
+    anchor.center = CGPointMake(160, 100);
+    
     UIGravityBehavior *gravity = [[UIGravityBehavior alloc] initWithItems:@[view]];
     
     UIAttachmentBehavior *attachment = [[UIAttachmentBehavior alloc] initWithItem:view attachedToAnchor:CGPointMake(160, 100)];

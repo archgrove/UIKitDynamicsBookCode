@@ -230,10 +230,10 @@
 		07B0D9DB18A29EFC00B46DF0 /* Specular background */ = {
 			isa = PBXGroup;
 			children = (
-				07B0D9D418A29EEA00B46DF0 /* SpecularBackgroundEffect.h */,
-				07B0D9D518A29EEA00B46DF0 /* SpecularBackgroundEffect.m */,
 				07B0D9D618A29EEA00B46DF0 /* SpecularButtonViewController.h */,
 				07B0D9D718A29EEA00B46DF0 /* SpecularButtonViewController.m */,
+				07B0D9D418A29EEA00B46DF0 /* SpecularBackgroundEffect.h */,
+				07B0D9D518A29EEA00B46DF0 /* SpecularBackgroundEffect.m */,
 			);
 			name = "Specular background";
 			sourceTree = "<group>";

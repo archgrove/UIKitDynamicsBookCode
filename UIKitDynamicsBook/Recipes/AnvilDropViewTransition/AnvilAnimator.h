@@ -23,5 +23,6 @@ typedef enum {
 @property NSUInteger gravityStrength;
 @property NSTimeInterval retractTime;
 @property NSTimeInterval smokeTime;
+@property NSUInteger smokePointsCount;
 
 @end

@@ -30,6 +30,7 @@
         self.gravityStrength = 5;
         self.retractTime = 1;
         self.smokeTime = 2;
+        self.smokePointsCount = 15;
     }
     
     return self;
@@ -132,23 +133,24 @@
 - (void)collisionBehavior:(UICollisionBehavior *)behavior beganContactForItem:(id<UIDynamicItem>)item withBoundaryIdentifier:(id<NSCopying>)identifier atPoint:(CGPoint)p
 {
     // The anvil has hit the bottom; spawn some smoke
-    const int SmokePointsCount = 10;
-    int pointDistance = (baselineEnd.x - baselineStart.x) / SmokePointsCount;
+    int pointDistance = (baselineEnd.x - baselineStart.x) / self.smokePointsCount;
     UIView *container = _transitionContext.containerView;
     
-    for (int i = 0; i < SmokePointsCount; i++)
+    for (int i = 0; i < self.smokePointsCount; i++)
     {
         CGPoint spawnPoint = CGPointMake(pointDistance * i, baselineStart.y);
         
         UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Smoke"]];
         imageView.center = spawnPoint;
         imageView.alpha = 0.5;
+        imageView.transform = CGAffineTransformMakeRotation((rand() / (float)RAND_MAX) * M_PI);
         
         [container addSubview:imageView];
         
         [UIView animateWithDuration:self.smokeTime delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
             imageView.center = CGPointMake(imageView.center.x + (rand() % 50 - 25), imageView.center.y - rand() % 100);
             imageView.alpha = 0;
+            imageView.transform = CGAffineTransformMakeRotation((rand() / (float)RAND_MAX) * M_PI);
         } completion:^(BOOL finished) {
             [imageView removeFromSuperview];
         }];

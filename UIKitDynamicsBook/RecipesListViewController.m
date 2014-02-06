@@ -13,6 +13,7 @@
 #import "Recipes/DraggableImage/DraggableImageViewController.h"
 #import "Recipes/SpecularBackground/SpecularButtonViewController.h"
 #import "Recipes/DangleMenu/DangleMenuViewController.h"
+#import "Recipes/AnvilDropViewTransition/FirstAnvilViewController.h"
 
 @implementation RecipesListViewController
 {
@@ -28,12 +29,14 @@
                  [ViewBounceInViewController class],
                  [DraggableImageViewController class],
                  [DangleMenuViewController class],
+                 [FirstAnvilViewController class],
                  [SpecularButtonViewController class],
                ];
     recipeTitles = @[
                      @"Bounce-in menu",
                      @"Draggable image",
                      @"Dangle menu",
+                     @"Anvil transition",
                      @"Specular background"
                     ];
     

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0772A31D18981E1F0065920F /* DynamicsDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 0772A31C18981E1F0065920F /* DynamicsDemo.m */; };
+		0776BDE418A3B1610020EB67 /* ImageWellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0776BDE318A3B1610020EB67 /* ImageWellView.m */; };
+		0776BDE718A3B1710020EB67 /* ImageWellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0776BDE618A3B1710020EB67 /* ImageWellViewController.m */; };
 		07B0D9C118A29ECB00B46DF0 /* AttachmentPoint1.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B0D9B518A29ECB00B46DF0 /* AttachmentPoint1.m */; };
 		07B0D9C218A29ECB00B46DF0 /* AttachmentPoint2.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B0D9B618A29ECB00B46DF0 /* AttachmentPoint2.m */; };
 		07B0D9C318A29ECB00B46DF0 /* AttachmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B0D9B718A29ECB00B46DF0 /* AttachmentView.m */; };
@@ -62,6 +64,10 @@
 /* Begin PBXFileReference section */
 		0772A31B18981E1F0065920F /* DynamicsDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicsDemo.h; sourceTree = "<group>"; };
 		0772A31C18981E1F0065920F /* DynamicsDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicsDemo.m; sourceTree = "<group>"; };
+		0776BDE218A3B1610020EB67 /* ImageWellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImageWellView.h; path = Recipes/ImageWell/ImageWellView.h; sourceTree = "<group>"; };
+		0776BDE318A3B1610020EB67 /* ImageWellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ImageWellView.m; path = Recipes/ImageWell/ImageWellView.m; sourceTree = "<group>"; };
+		0776BDE518A3B1710020EB67 /* ImageWellViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImageWellViewController.h; path = Recipes/ImageWell/ImageWellViewController.h; sourceTree = "<group>"; };
+		0776BDE618A3B1710020EB67 /* ImageWellViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ImageWellViewController.m; path = Recipes/ImageWell/ImageWellViewController.m; sourceTree = "<group>"; };
 		07B0D9A918A29ECB00B46DF0 /* AttachmentPoint1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AttachmentPoint1.h; path = Demos/AttachmentPoint1.h; sourceTree = "<group>"; };
 		07B0D9AA18A29ECB00B46DF0 /* AttachmentPoint2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AttachmentPoint2.h; path = Demos/AttachmentPoint2.h; sourceTree = "<group>"; };
 		07B0D9AB18A29ECB00B46DF0 /* AttachmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AttachmentView.h; path = Demos/AttachmentView.h; sourceTree = "<group>"; };
@@ -157,32 +163,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0776BDE118A3B1270020EB67 /* ImageWell */ = {
+			isa = PBXGroup;
+			children = (
+				0776BDE218A3B1610020EB67 /* ImageWellView.h */,
+				0776BDE318A3B1610020EB67 /* ImageWellView.m */,
+				0776BDE518A3B1710020EB67 /* ImageWellViewController.h */,
+				0776BDE618A3B1710020EB67 /* ImageWellViewController.m */,
+			);
+			name = ImageWell;
+			sourceTree = "<group>";
+		};
 		07B0D9A818A29EC000B46DF0 /* Demos */ = {
 			isa = PBXGroup;
 			children = (
 				07B0D9A918A29ECB00B46DF0 /* AttachmentPoint1.h */,
-				07B0D9AA18A29ECB00B46DF0 /* AttachmentPoint2.h */,
-				07B0D9AB18A29ECB00B46DF0 /* AttachmentView.h */,
-				07B0D9AC18A29ECB00B46DF0 /* BehaviorDemosListViewController.h */,
-				07B0D9AD18A29ECB00B46DF0 /* CollisionBehaviorDemo1.h */,
-				07B0D9AE18A29ECB00B46DF0 /* CollisionBehaviorDemo2.h */,
-				07B0D9AF18A29ECB00B46DF0 /* CollisionBehaviorDemo3.h */,
-				07B0D9B018A29ECB00B46DF0 /* ContinuousPush.h */,
-				07B0D9B118A29ECB00B46DF0 /* ContinuousPushOffCentre.h */,
-				07B0D9B218A29ECB00B46DF0 /* GravityDemo.h */,
-				07B0D9B318A29ECB00B46DF0 /* ImpulsePush.h */,
-				07B0D9B418A29ECB00B46DF0 /* SnapDemo.h */,
 				07B0D9B518A29ECB00B46DF0 /* AttachmentPoint1.m */,
+				07B0D9AA18A29ECB00B46DF0 /* AttachmentPoint2.h */,
 				07B0D9B618A29ECB00B46DF0 /* AttachmentPoint2.m */,
+				07B0D9AB18A29ECB00B46DF0 /* AttachmentView.h */,
 				07B0D9B718A29ECB00B46DF0 /* AttachmentView.m */,
+				07B0D9AC18A29ECB00B46DF0 /* BehaviorDemosListViewController.h */,
 				07B0D9B818A29ECB00B46DF0 /* BehaviorDemosListViewController.m */,
+				07B0D9AD18A29ECB00B46DF0 /* CollisionBehaviorDemo1.h */,
 				07B0D9B918A29ECB00B46DF0 /* CollisionBehaviorDemo1.m */,
+				07B0D9AE18A29ECB00B46DF0 /* CollisionBehaviorDemo2.h */,
 				07B0D9BA18A29ECB00B46DF0 /* CollisionBehaviorDemo2.m */,
+				07B0D9AF18A29ECB00B46DF0 /* CollisionBehaviorDemo3.h */,
 				07B0D9BB18A29ECB00B46DF0 /* CollisionBehaviorDemo3.m */,
+				07B0D9B018A29ECB00B46DF0 /* ContinuousPush.h */,
 				07B0D9BC18A29ECB00B46DF0 /* ContinuousPush.m */,
+				07B0D9B118A29ECB00B46DF0 /* ContinuousPushOffCentre.h */,
 				07B0D9BD18A29ECB00B46DF0 /* ContinuousPushOffCentre.m */,
+				07B0D9B218A29ECB00B46DF0 /* GravityDemo.h */,
 				07B0D9BE18A29ECB00B46DF0 /* GravityDemo.m */,
+				07B0D9B318A29ECB00B46DF0 /* ImpulsePush.h */,
 				07B0D9BF18A29ECB00B46DF0 /* ImpulsePush.m */,
+				07B0D9B418A29ECB00B46DF0 /* SnapDemo.h */,
 				07B0D9C018A29ECB00B46DF0 /* SnapDemo.m */,
 			);
 			name = Demos;
@@ -191,6 +208,7 @@
 		07B0D9CD18A29ED300B46DF0 /* Recipes */ = {
 			isa = PBXGroup;
 			children = (
+				0776BDE118A3B1270020EB67 /* ImageWell */,
 				07B0D9EA18A2BF8700B46DF0 /* AnvilViewController */,
 				07B0D9E018A2AB5700B46DF0 /* DangleMenu */,
 				07B0D9DC18A29EFE00B46DF0 /* Draggable image */,
@@ -459,8 +477,10 @@
 				07FC78F518A24A0F00D1E4A7 /* RecipesListViewController.m in Sources */,
 				07B0D9D818A29EEA00B46DF0 /* SpecularBackgroundEffect.m in Sources */,
 				07B0D9D018A29EDC00B46DF0 /* ViewBounceInViewController.m in Sources */,
+				0776BDE418A3B1610020EB67 /* ImageWellView.m in Sources */,
 				07B0D9C518A29ECB00B46DF0 /* CollisionBehaviorDemo1.m in Sources */,
 				07B0D9DF18A29F9900B46DF0 /* GridView.m in Sources */,
+				0776BDE718A3B1710020EB67 /* ImageWellViewController.m in Sources */,
 				07B0D9C218A29ECB00B46DF0 /* AttachmentPoint2.m in Sources */,
 				07B0D9F618A392F400B46DF0 /* AnvilTransitionVendor.m in Sources */,
 				07B0D9F018A38F2F00B46DF0 /* ModalAnvilViewController.m in Sources */,

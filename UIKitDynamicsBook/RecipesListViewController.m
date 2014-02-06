@@ -11,9 +11,10 @@
 // The recipe classes
 #import "Recipes/BounceIn/ViewBounceInViewController.h"
 #import "Recipes/DraggableImage/DraggableImageViewController.h"
-#import "Recipes/SpecularBackground/SpecularButtonViewController.h"
 #import "Recipes/DangleMenu/DangleMenuViewController.h"
 #import "Recipes/AnvilDropViewTransition/FirstAnvilViewController.h"
+#import "Recipes/ImageWell/ImageWellViewController.h"
+#import "Recipes/SpecularBackground/SpecularButtonViewController.h"
 
 @implementation RecipesListViewController
 {
@@ -30,6 +31,7 @@
                  [DraggableImageViewController class],
                  [DangleMenuViewController class],
                  [FirstAnvilViewController class],
+                 [ImageWellViewController class],
                  [SpecularButtonViewController class],
                ];
     recipeTitles = @[
@@ -37,6 +39,7 @@
                      @"Draggable image",
                      @"Dangle menu",
                      @"Anvil transition",
+                     @"Image well",
                      @"Specular background"
                     ];
     

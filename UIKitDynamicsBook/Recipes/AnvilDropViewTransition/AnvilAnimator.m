@@ -18,6 +18,7 @@
     
     CGPoint baselineStart;
     CGPoint baselineEnd;
+    CGRect finalFrame;
 }
 
 - (instancetype)initWithMode:(AnvilAnimationMode)mode
@@ -57,8 +58,8 @@
         
         // Add a boundary at the bottom of the screen
         CGSize screenSize = [UIScreen mainScreen].bounds.size;
-        baselineStart = CGPointMake(0, screenSize.height + 1);
-        baselineEnd = CGPointMake(screenSize.width, screenSize.height + 1);
+        baselineStart = CGPointMake(0, screenSize.height);
+        baselineEnd = CGPointMake(screenSize.width, screenSize.height);
         
         collisionBehavior = [[UICollisionBehavior alloc] initWithItems:@[modalView]];
         [collisionBehavior addBoundaryWithIdentifier:@"Bottom" fromPoint:baselineStart toPoint:baselineEnd];
@@ -127,6 +128,11 @@
 
 - (void)dynamicAnimatorDidPause:(UIDynamicAnimator *)animator
 {
+    // The animator will sometimes leave the final view controller on a fractional pixel boundary; fix that here
+    UIView *modalView = [_transitionContext viewControllerForKey:UITransitionContextToViewControllerKey].view;
+    CGRect frame = modalView.frame;
+    modalView.frame = CGRectMake((int)frame.origin.x, (int)frame.origin.y, frame.size.width, frame.size.height);
+    
     [_transitionContext completeTransition:YES];
 }
 

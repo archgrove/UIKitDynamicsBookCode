@@ -16,7 +16,9 @@ inline static CGFloat interpolate(CGFloat source, CGFloat dest, float factor)
 
 @implementation SpecularBackgroundEffect
 {
+    // Storage for the base colour components
     CGFloat bR, bG, bB, bA;
+    // and for the specular components
     CGFloat sR, sG, sB, sA;
 }
 
@@ -48,20 +50,21 @@ inline static CGFloat interpolate(CGFloat source, CGFloat dest, float factor)
 
 - (NSDictionary *)keyPathsAndRelativeValuesForViewerOffset:(UIOffset)viewerOffset
 {
+    // The viewer offset can be seen as Eulerian angles representing the vector of the device
     CGFloat yaw = M_PI * viewerOffset.horizontal;
     CGFloat pitch = M_PI * viewerOffset.vertical;
-    
-    CGFloat viewerVector[] = {0, 0, -1};
     CGFloat deviceVector[] = { sin(yaw) * -cos(pitch), sin(pitch), cos(yaw) * -cos(pitch) };
     
+    // The viewer never rotates
+    CGFloat viewerVector[] = {0, 0, -1};
+
+    // We thus approximate Phong shading to compute the specular intensisty
     CGFloat dotProduct =   viewerVector[0] * deviceVector[0]
                          + viewerVector[1] * deviceVector[1]
                          + viewerVector[2] * deviceVector[2];
-    
-    // The viewer offset can be seen as the viewport vector of the user
-    // We thus approximate Phong shading to compute the specular intensisty
     float intensity = dotProduct * dotProduct * dotProduct;
-    
+
+    // We linearly interpolate the specular colour with the base colour based on the intensity
     UIColor *c = [UIColor colorWithRed:interpolate(bR, sR, intensity)
                                  green:interpolate(bG, sG, intensity)
                                   blue:interpolate(bB, sB, intensity)
@@ -71,11 +74,14 @@ inline static CGFloat interpolate(CGFloat source, CGFloat dest, float factor)
     return @{ @"backgroundColor" : c };
 }
 
-- (void) getColourComponents:(UIColor *)col r:(CGFloat *)r g:(CGFloat *)g b:(CGFloat *)b a:(CGFloat *)a
+- (void)getColourComponents:(UIColor *)col r:(CGFloat *)r g:(CGFloat *)g b:(CGFloat *)b a:(CGFloat *)a
 {
     // Extract colour components from either an RGB or greyscale colour space
+    
+    // If we can't get them from the RGBA space
     if (![col getRed:r green:g blue:b alpha:a])
     {
+        // Assume we're in a Greyscale space
         CGFloat white;
         
         [col getWhite:&white alpha:a];

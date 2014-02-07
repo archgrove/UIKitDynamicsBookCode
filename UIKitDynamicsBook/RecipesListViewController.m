@@ -11,6 +11,7 @@
 // The recipe classes
 #import "Recipes/BounceIn/ViewBounceInViewController.h"
 #import "Recipes/DraggableImage/DraggableImageViewController.h"
+#import "Recipes/DFSImage/DFSImageViewController.h"
 #import "Recipes/DangleMenu/DangleMenuViewController.h"
 #import "Recipes/AnvilDropViewTransition/FirstAnvilViewController.h"
 #import "Recipes/ImageWell/ImageWellViewController.h"
@@ -29,6 +30,7 @@
     recipes = @[
                  [ViewBounceInViewController class],
                  [DraggableImageViewController class],
+                 [DFSImageViewController class],
                  [DangleMenuViewController class],
                  [FirstAnvilViewController class],
                  [ImageWellViewController class],
@@ -37,6 +39,7 @@
     recipeTitles = @[
                      @"Bounce-in menu",
                      @"Draggable image",
+                     @"DFS image",
                      @"Dangle menu",
                      @"Anvil transition",
                      @"Image well",

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0725076B18A4E641001BD96B /* DFSImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0725076918A4E641001BD96B /* DFSImageViewController.m */; };
 		0772A31D18981E1F0065920F /* DynamicsDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 0772A31C18981E1F0065920F /* DynamicsDemo.m */; };
 		0776BDE418A3B1610020EB67 /* ImageWellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0776BDE318A3B1610020EB67 /* ImageWellView.m */; };
 		0776BDE718A3B1710020EB67 /* ImageWellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0776BDE618A3B1710020EB67 /* ImageWellViewController.m */; };
@@ -62,6 +63,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0725076918A4E641001BD96B /* DFSImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DFSImageViewController.m; path = Recipes/DFSImage/DFSImageViewController.m; sourceTree = "<group>"; };
+		0725076A18A4E641001BD96B /* DFSImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DFSImageViewController.h; path = Recipes/DFSImage/DFSImageViewController.h; sourceTree = "<group>"; };
 		0772A31B18981E1F0065920F /* DynamicsDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicsDemo.h; sourceTree = "<group>"; };
 		0772A31C18981E1F0065920F /* DynamicsDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicsDemo.m; sourceTree = "<group>"; };
 		0776BDE218A3B1610020EB67 /* ImageWellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImageWellView.h; path = Recipes/ImageWell/ImageWellView.h; sourceTree = "<group>"; };
@@ -163,6 +166,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0725076818A4E602001BD96B /* DFS image */ = {
+			isa = PBXGroup;
+			children = (
+				0725076918A4E641001BD96B /* DFSImageViewController.m */,
+				0725076A18A4E641001BD96B /* DFSImageViewController.h */,
+			);
+			name = "DFS image";
+			sourceTree = "<group>";
+		};
 		0776BDE118A3B1270020EB67 /* ImageWell */ = {
 			isa = PBXGroup;
 			children = (
@@ -212,6 +224,7 @@
 				07B0D9EA18A2BF8700B46DF0 /* AnvilViewController */,
 				07B0D9E018A2AB5700B46DF0 /* DangleMenu */,
 				07B0D9DC18A29EFE00B46DF0 /* Draggable image */,
+				0725076818A4E602001BD96B /* DFS image */,
 				07B0D9DB18A29EFC00B46DF0 /* Specular background */,
 				07B0D9DA18A29EF100B46DF0 /* Bounce in view */,
 			);
@@ -473,6 +486,7 @@
 				07B0D9ED18A38EBC00B46DF0 /* FirstAnvilViewController.m in Sources */,
 				07B0D9C318A29ECB00B46DF0 /* AttachmentView.m in Sources */,
 				07B0D9E918A2AC5500B46DF0 /* DangleMenuController.m in Sources */,
+				0725076B18A4E641001BD96B /* DFSImageViewController.m in Sources */,
 				07EB427D17ABB51E0067F348 /* DynamicsDemoViewController.m in Sources */,
 				07FC78F518A24A0F00D1E4A7 /* RecipesListViewController.m in Sources */,
 				07B0D9D818A29EEA00B46DF0 /* SpecularBackgroundEffect.m in Sources */,

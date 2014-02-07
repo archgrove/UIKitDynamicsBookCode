@@ -6,9 +6,11 @@
 //  Copyright (c) 2014 Adam Wright. All rights reserved.
 //
 
-#import "DraggableImageViewController.h"
+#import "DFSImageViewController.h"
 
-@implementation DraggableImageViewController
+const NSUInteger FlingThreshhold = 200;
+
+@implementation DFSImageViewController
 {
     UIPanGestureRecognizer *panRecognizer;
     
@@ -16,6 +18,9 @@
     
     UIDynamicAnimator *dynamicAnimator;
     UIAttachmentBehavior *attachmentBehavior;
+    UISnapBehavior *snapBehavior;
+    
+    CGPoint lastVelocity;
 }
 
 - (void)loadView
@@ -43,6 +48,13 @@
     [imageView addGestureRecognizer:panRecognizer];
     
     dynamicAnimator = [[UIDynamicAnimator alloc] initWithReferenceView:self.view];
+    
+    // Configure the snap behavior, whose parameters are constant through the effect
+    snapBehavior = [[UISnapBehavior alloc] initWithItem:imageView snapToPoint:imageView.center];
+    // ...and attach it to the image
+    [dynamicAnimator addBehavior:snapBehavior];
+    
+    lastVelocity = CGPointZero;
 }
 
 - (void)handleGesture:(UIGestureRecognizer*)recognizer
@@ -51,23 +63,20 @@
     {
         case UIGestureRecognizerStateBegan:
         {
-            // When the touch begins, we create a new attachment behavior, linking:
-            // the point of the touch *within* the reference view
+            // Remove any existing behavior (which will be either the snap, or the push)
+            // We do this so that the user can try to catch the flung image before it vanishes
+            [dynamicAnimator removeAllBehaviors];
+            
             CGPoint globalP = [panRecognizer locationInView:nil];
-            // to the point of the touch in the image
             CGPoint center = CGPointMake(globalP.x - imageView.center.x, globalP.y - imageView.center.y);
-            // Notice that as previous drag operations will probably have rotated the image, we must account for the
-            // rotation when computing the offset
             CGPoint ivCentre = CGPointApplyAffineTransform(center, CGAffineTransformInvert(imageView.transform));
         
             attachmentBehavior = [[UIAttachmentBehavior alloc] initWithItem:imageView offsetFromCenter:UIOffsetMake(ivCentre.x,
                                                                                                                     ivCentre.y)
                                                                attachedToAnchor:globalP];
             
-            // The length of the attachment "rod" must be 0 for the image to track with the users finger
             attachmentBehavior.length = 0;
-            
-            
+
             [dynamicAnimator addBehavior:attachmentBehavior];
 
             break;
@@ -75,18 +84,37 @@
             
         case UIGestureRecognizerStateChanged:
         {
-            // When the user drags their touch, we update the anchor point of the attachment
-            // The dynamic animator will then move the image towards the new point, accounting for
-            // the offset of the original touch anchor-point in the image (
             CGPoint p = [panRecognizer locationInView:nil];
             
             attachmentBehavior.anchorPoint = p;
+            
+            // We now track the velocity of the movement at all times
+            lastVelocity = [panRecognizer velocityInView:nil];
 
             break;
         }
         default:
-            // When the behavior ends, we remove it from the image view
+            // Remove the attachment to the touch point
             [dynamicAnimator removeBehavior:attachmentBehavior];
+            
+            // We must now decide if the image is "flung" off
+            // We examine the magnitude of the velocity vector
+            if (sqrt(lastVelocity.x * lastVelocity.x + lastVelocity.y + lastVelocity.y) > FlingThreshhold)
+            {
+                // This image has been flung! Attach a push behavior to the image
+                UIPushBehavior *pushBehavior = [[UIPushBehavior alloc] initWithItems:@[imageView] mode:UIPushBehaviorModeInstantaneous];
+                
+                // The velocities given by the pan gesture, whilst accurate, don't look good
+                pushBehavior.pushDirection = CGVectorMake(lastVelocity.x / 10, lastVelocity.y / 10);
+                
+                [dynamicAnimator addBehavior:pushBehavior];
+            }
+            else
+            {
+                // Otherwise, just snap to the centre again
+                [dynamicAnimator addBehavior:snapBehavior];
+            }
+            
             break;
     }
 }

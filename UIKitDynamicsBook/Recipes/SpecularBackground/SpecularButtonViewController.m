@@ -16,7 +16,7 @@
     self.view = [[UIView alloc] initWithFrame:[UIScreen mainScreen].applicationFrame];
     self.view.backgroundColor = [UIColor whiteColor];
     
-    // Create a button to act as the menu toggle
+    // Create a button whose background will be "specularised"
     UIButton *menuButton = [UIButton buttonWithType:UIButtonTypeSystem];
     menuButton.frame = CGRectMake(0, 0, 200, 60);
     menuButton.center = CGPointMake(160, 200);
@@ -25,10 +25,11 @@
     menuButton.layer.borderWidth = 1.0f;
     menuButton.layer.cornerRadius = 3.0f;
     
-    // When pressed, we will initiate the animation
     [menuButton setTitle:@"Specular button" forState:UIControlStateNormal];
-    
-    SpecularBackgroundEffect *specularBGEffect = [[SpecularBackgroundEffect alloc] initWithBackgroundColor:[UIColor whiteColor] specularColor:[UIColor darkGrayColor]];
+
+    // Add the specular effect to the button
+    SpecularBackgroundEffect *specularBGEffect = [[SpecularBackgroundEffect alloc] initWithBackgroundColor:[UIColor whiteColor]
+                                                                                             specularColor:[UIColor darkGrayColor]];
     [menuButton addMotionEffect:specularBGEffect];
     
     [self.view addSubview:menuButton];

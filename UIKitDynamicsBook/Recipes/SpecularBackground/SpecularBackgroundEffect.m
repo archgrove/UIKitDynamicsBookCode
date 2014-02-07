@@ -52,7 +52,7 @@ inline static CGFloat interpolate(CGFloat source, CGFloat dest, float factor)
     CGFloat pitch = M_PI * viewerOffset.vertical;
     
     CGFloat viewerVector[] = {0, 0, -1};
-    CGFloat deviceVector[] = { sin(pitch), cos(yaw) * cos(pitch), sin(yaw) * cos(pitch) };
+    CGFloat deviceVector[] = { sin(yaw) * -cos(pitch), sin(pitch), cos(yaw) * -cos(pitch) };
     
     CGFloat dotProduct =   viewerVector[0] * deviceVector[0]
                          + viewerVector[1] * deviceVector[1]
@@ -60,7 +60,7 @@ inline static CGFloat interpolate(CGFloat source, CGFloat dest, float factor)
     
     // The viewer offset can be seen as the viewport vector of the user
     // We thus approximate Phong shading to compute the specular intensisty
-    float intensity = dotProduct * dotProduct;
+    float intensity = dotProduct * dotProduct * dotProduct;
     
     UIColor *c = [UIColor colorWithRed:interpolate(bR, sR, intensity)
                                  green:interpolate(bG, sG, intensity)

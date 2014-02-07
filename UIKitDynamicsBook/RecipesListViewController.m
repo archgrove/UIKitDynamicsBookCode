@@ -74,6 +74,7 @@
     Class targetClass = recipes[indexPath.row];
     
     id targetController = [[targetClass alloc] init];
+    [targetController setHidesBottomBarWhenPushed:YES];
     
     [self.navigationController pushViewController:targetController animated:YES];
 }

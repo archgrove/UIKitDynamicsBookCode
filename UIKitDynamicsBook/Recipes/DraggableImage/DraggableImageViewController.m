@@ -10,9 +10,9 @@
 
 @implementation DraggableImageViewController
 {
-    UIPanGestureRecognizer *panRecognizer;
-    
     UIImageView *imageView;
+    
+    UIPanGestureRecognizer *panRecognizer;
     
     UIDynamicAnimator *dynamicAnimator;
     UIAttachmentBehavior *attachmentBehavior;
@@ -53,19 +53,16 @@
         {
             // When the touch begins, we create a new attachment behavior, linking:
             // the point of the touch *within* the reference view
-            CGPoint globalP = [panRecognizer locationInView:nil];
+            CGPoint anchorPoint = [panRecognizer locationInView:nil];
             // to the point of the touch in the image
-            CGPoint center = CGPointMake(globalP.x - imageView.center.x, globalP.y - imageView.center.y);
+            CGPoint locationInImage = CGPointMake(anchorPoint.x - imageView.center.x, anchorPoint.y - imageView.center.y);
             // Notice that as previous drag operations will probably have rotated the image, we must account for the
             // rotation when computing the offset
-            CGPoint ivCentre = CGPointApplyAffineTransform(center, CGAffineTransformInvert(imageView.transform));
+            CGPoint locationInAAImage = CGPointApplyAffineTransform(locationInImage, CGAffineTransformInvert(imageView.transform));
         
-            attachmentBehavior = [[UIAttachmentBehavior alloc] initWithItem:imageView offsetFromCenter:UIOffsetMake(ivCentre.x,
-                                                                                                                    ivCentre.y)
-                                                               attachedToAnchor:globalP];
-            
-            // The length of the attachment "rod" must be 0 for the image to track with the users finger
-            attachmentBehavior.length = 0;
+            attachmentBehavior = [[UIAttachmentBehavior alloc] initWithItem:imageView offsetFromCenter:UIOffsetMake(locationInAAImage.x,
+                                                                                                                    locationInAAImage.y)
+                                                               attachedToAnchor:anchorPoint];
             
             
             [dynamicAnimator addBehavior:attachmentBehavior];
@@ -87,6 +84,7 @@
         default:
             // When the behavior ends, we remove it from the image view
             [dynamicAnimator removeBehavior:attachmentBehavior];
+            attachmentBehavior = nil;
             break;
     }
 }

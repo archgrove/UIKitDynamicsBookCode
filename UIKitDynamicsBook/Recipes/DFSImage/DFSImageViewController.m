@@ -8,19 +8,20 @@
 
 #import "DFSImageViewController.h"
 
-const NSUInteger FlingThreshhold = 200;
+const NSUInteger FlingThreshhold = 150;
 
 @implementation DFSImageViewController
 {
-    UIPanGestureRecognizer *panRecognizer;
-    
     UIImageView *imageView;
+    
+    UIPanGestureRecognizer *panRecognizer;
     
     UIDynamicAnimator *dynamicAnimator;
     UIAttachmentBehavior *attachmentBehavior;
     UISnapBehavior *snapBehavior;
     
     CGPoint lastVelocity;
+    UIOffset lastOffset;
 }
 
 - (void)loadView
@@ -41,7 +42,7 @@ const NSUInteger FlingThreshhold = 200;
 {
     [super viewDidLoad];
     
-    self.title = @"Draggable image";
+    self.title = @"DFS image";
 
     // We drive the dynamic animation from a pan recognizer that tracks the users finger
     panRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handleGesture:)];
@@ -67,15 +68,14 @@ const NSUInteger FlingThreshhold = 200;
             // We do this so that the user can try to catch the flung image before it vanishes
             [dynamicAnimator removeAllBehaviors];
             
-            CGPoint globalP = [panRecognizer locationInView:nil];
-            CGPoint center = CGPointMake(globalP.x - imageView.center.x, globalP.y - imageView.center.y);
-            CGPoint ivCentre = CGPointApplyAffineTransform(center, CGAffineTransformInvert(imageView.transform));
-        
-            attachmentBehavior = [[UIAttachmentBehavior alloc] initWithItem:imageView offsetFromCenter:UIOffsetMake(ivCentre.x,
-                                                                                                                    ivCentre.y)
-                                                               attachedToAnchor:globalP];
+            CGPoint anchorPoint = [panRecognizer locationInView:nil];
+            CGPoint locationInImage = CGPointMake(anchorPoint.x - imageView.center.x, anchorPoint.y - imageView.center.y);
+            CGPoint locationInAAImage = CGPointApplyAffineTransform(locationInImage, CGAffineTransformInvert(imageView.transform));
             
-            attachmentBehavior.length = 0;
+            lastOffset = UIOffsetMake(locationInAAImage.x, locationInAAImage.y);
+            
+            attachmentBehavior = [[UIAttachmentBehavior alloc] initWithItem:imageView offsetFromCenter: lastOffset
+                                                           attachedToAnchor:anchorPoint];
 
             [dynamicAnimator addBehavior:attachmentBehavior];
 
@@ -96,6 +96,7 @@ const NSUInteger FlingThreshhold = 200;
         default:
             // Remove the attachment to the touch point
             [dynamicAnimator removeBehavior:attachmentBehavior];
+            attachmentBehavior = nil;            
             
             // We must now decide if the image is "flung" off
             // We examine the magnitude of the velocity vector
@@ -105,7 +106,8 @@ const NSUInteger FlingThreshhold = 200;
                 UIPushBehavior *pushBehavior = [[UIPushBehavior alloc] initWithItems:@[imageView] mode:UIPushBehaviorModeInstantaneous];
                 
                 // The velocities given by the pan gesture, whilst accurate, don't look good
-                pushBehavior.pushDirection = CGVectorMake(lastVelocity.x / 10, lastVelocity.y / 10);
+                pushBehavior.pushDirection = CGVectorMake(lastVelocity.x / 25, lastVelocity.y / 25);
+                [pushBehavior setTargetOffsetFromCenter:lastOffset forItem:imageView];
                 
                 [dynamicAnimator addBehavior:pushBehavior];
             }

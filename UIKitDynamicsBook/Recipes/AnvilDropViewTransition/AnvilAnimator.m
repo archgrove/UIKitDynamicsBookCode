@@ -126,12 +126,20 @@
 - (void)collisionBehavior:(UICollisionBehavior *)behavior beganContactForItem:(id<UIDynamicItem>)item withBoundaryIdentifier:(id<NSCopying>)identifier atPoint:(CGPoint)p
 {
     // The anvil has hit the bottom; spawn some smoke
-    int pointDistance = (baselineEnd.x - baselineStart.x) / self.smokePointsCount;
-    UIView *container = _transitionContext.containerView;
+    [self generateSmokeEffectsInView:_transitionContext.containerView startPoint:baselineStart endPoint:baselineEnd pointCount:self.smokePointsCount duration:self.smokeTime];
+}
+
+- (void)generateSmokeEffectsInView:(UIView*)container startPoint:(CGPoint)start endPoint:(CGPoint)end pointCount:(NSUInteger)pointCount duration:(NSTimeInterval)time
+{
+    const int xDistribution = 50;
+    const int yDistribution = 100;
+    const CGPoint line = CGPointMake(end.x - start.x, end.y - start.y);
     
-    for (int i = 0; i < self.smokePointsCount; i++)
+    for (int i = 0; i < pointCount; i++)
     {
-        CGPoint spawnPoint = CGPointMake(pointDistance * i + (pointDistance / 2), baselineStart.y);
+        float pointFactor = i / ((float)pointCount - 1);
+        
+        CGPoint spawnPoint = CGPointMake(start.x + (pointFactor * line.x), start.y + (pointFactor * line.y));
         
         UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Smoke"]];
         imageView.center = spawnPoint;
@@ -140,8 +148,9 @@
         
         [container addSubview:imageView];
         
-        [UIView animateWithDuration:self.smokeTime delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
-            imageView.center = CGPointMake(imageView.center.x + (rand() % 50 - 25), imageView.center.y - rand() % 100);
+        [UIView animateWithDuration:time delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
+            imageView.center = CGPointMake(imageView.center.x + (rand() % xDistribution - (xDistribution / 2)),
+                                           imageView.center.y - rand() % yDistribution);
             imageView.alpha = 0;
             imageView.transform = CGAffineTransformMakeRotation((rand() / (float)RAND_MAX) * M_PI);
         } completion:^(BOOL finished) {

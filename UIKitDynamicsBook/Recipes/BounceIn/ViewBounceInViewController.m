@@ -48,11 +48,13 @@
     popinButton1.frame = CGRectMake(0, 0, 100, 30);
     popinButton1.center = CGPointMake(60, 90);
     [popinButton1 setTitle:@"Button 1" forState:UIControlStateNormal];
+    [popinButton1 setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
     
     popinButton2 = [UIButton buttonWithType:UIButtonTypeSystem];
     popinButton2.frame = CGRectMake(0, 0, 100, 30);
     popinButton2.center = CGPointMake(60, 90);
     [popinButton2 setTitle:@"Button 2" forState:UIControlStateNormal];
+    [popinButton2 setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
     
     // Add all the views to the subview
     [self.view addSubview:popinButton1];
@@ -70,6 +72,11 @@
 
 - (void)toggleViews:(id)sender
 {
+    const CGPoint homeLocation = menuButton.center;
+    const CGPoint button1ExpandedLocation = CGPointMake(150, 90);
+    const CGPoint button2ExpandedLocation = CGPointMake(220, 90);
+    const CGFloat damping = 0.75;
+    
     [dynamicAnimator removeAllBehaviors];
     
     UISnapBehavior *snapForButton1;
@@ -77,17 +84,17 @@
     
     if (isShowing)
     {
-        snapForButton1 = [[UISnapBehavior alloc] initWithItem:popinButton1 snapToPoint:CGPointMake(60, 90)];
-        snapForButton2 = [[UISnapBehavior alloc] initWithItem:popinButton2 snapToPoint:CGPointMake(60, 90)];
+        snapForButton1 = [[UISnapBehavior alloc] initWithItem:popinButton1 snapToPoint:homeLocation];
+        snapForButton2 = [[UISnapBehavior alloc] initWithItem:popinButton2 snapToPoint:homeLocation];
     }
     else
     {
-        snapForButton1 = [[UISnapBehavior alloc] initWithItem:popinButton1 snapToPoint:CGPointMake(150, 90)];
-        snapForButton2 = [[UISnapBehavior alloc] initWithItem:popinButton2 snapToPoint:CGPointMake(220, 90)];
+        snapForButton1 = [[UISnapBehavior alloc] initWithItem:popinButton1 snapToPoint:button1ExpandedLocation];
+        snapForButton2 = [[UISnapBehavior alloc] initWithItem:popinButton2 snapToPoint:button2ExpandedLocation];
     }
     
-    snapForButton1.damping = 0.75;
-    snapForButton2.damping = 0.75;
+    snapForButton1.damping = damping;
+    snapForButton2.damping = damping;
     
     [dynamicAnimator addBehavior:snapForButton1];
     [dynamicAnimator addBehavior:snapForButton2];

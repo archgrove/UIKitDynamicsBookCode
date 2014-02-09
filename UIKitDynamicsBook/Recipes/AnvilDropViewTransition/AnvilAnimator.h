@@ -8,20 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-typedef enum {
-    AnvilAnimationArrival,
-    AnvilAnimationDismissal
-} AnvilAnimationMode;
-
 @interface AnvilAnimator : NSObject<UIViewControllerAnimatedTransitioning, UIDynamicAnimatorDelegate, UICollisionBehaviorDelegate>
-{
-    AnvilAnimationMode _mode;
-}
-
-- (instancetype)initWithMode:(AnvilAnimationMode)mode;
 
 @property NSUInteger gravityStrength;
-@property NSTimeInterval retractTime;
 @property NSTimeInterval smokeTime;
 @property NSUInteger smokePointsCount;
 

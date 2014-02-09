@@ -17,7 +17,7 @@
     AnvilTransitionVendor *transitionVendor;
 }
 
-- (void)viewDidLoad
+- (void)loadView
 {
     self.view = [[UIView alloc] initWithFrame:[UIScreen mainScreen].applicationFrame];
     self.view.backgroundColor = [UIColor whiteColor];
@@ -32,18 +32,20 @@
     [dropViewButton addTarget:self action:@selector(dropModalController:) forControlEvents:UIControlEventTouchUpInside];
     
     [self.view addSubview:dropViewButton];
-    
+}
+
+- (void)dropModalController:(id)sender
+{
+    [self presentViewController:modalController animated:YES completion:nil];
+}
+
+- (void)viewDidLoad
+{
     modalController = [[ModalAnvilViewController alloc] init];
     modalController.modalPresentationStyle = UIModalPresentationCustom;
     transitionVendor = [[AnvilTransitionVendor alloc] init];
     modalController.transitioningDelegate = transitionVendor;
 }
 
-- (void)dropModalController:(id)sender
-{
-    [self presentViewController:modalController animated:YES completion:^{
-        
-    }];
-}
 
 @end

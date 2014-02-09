@@ -24,7 +24,6 @@
     dismissButton.frame = CGRectMake(0, 0, 200, 50);
     dismissButton.center = CGPointMake(160, 90);
     
-    
     // When pressed, we will toggle the menu
     [dismissButton setTitle:@"Dismiss view controller" forState:UIControlStateNormal];
     [dismissButton addTarget:self action:@selector(dismissController:) forControlEvents:UIControlEventTouchUpInside];
@@ -34,8 +33,7 @@
 
 - (void)dismissController:(id)sender
 {
-    [self dismissViewControllerAnimated:YES completion:^{
-    }];
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 

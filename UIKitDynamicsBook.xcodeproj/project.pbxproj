@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0725076B18A4E641001BD96B /* DFSImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0725076918A4E641001BD96B /* DFSImageViewController.m */; };
+		0725076E18A52C4E001BD96B /* SmokeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0725076D18A52C4E001BD96B /* SmokeGenerator.m */; };
+		0725077118A54AF3001BD96B /* SlideUpAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0725077018A54AF3001BD96B /* SlideUpAnimator.m */; };
 		0772A31D18981E1F0065920F /* DynamicsDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 0772A31C18981E1F0065920F /* DynamicsDemo.m */; };
 		0776BDE418A3B1610020EB67 /* ImageWellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0776BDE318A3B1610020EB67 /* ImageWellView.m */; };
 		0776BDE718A3B1710020EB67 /* ImageWellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0776BDE618A3B1710020EB67 /* ImageWellViewController.m */; };
@@ -65,6 +67,10 @@
 /* Begin PBXFileReference section */
 		0725076918A4E641001BD96B /* DFSImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DFSImageViewController.m; path = Recipes/DFSImage/DFSImageViewController.m; sourceTree = "<group>"; };
 		0725076A18A4E641001BD96B /* DFSImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DFSImageViewController.h; path = Recipes/DFSImage/DFSImageViewController.h; sourceTree = "<group>"; };
+		0725076C18A52C4E001BD96B /* SmokeGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SmokeGenerator.h; path = Recipes/AnvilDropViewTransition/SmokeGenerator.h; sourceTree = "<group>"; };
+		0725076D18A52C4E001BD96B /* SmokeGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SmokeGenerator.m; path = Recipes/AnvilDropViewTransition/SmokeGenerator.m; sourceTree = "<group>"; };
+		0725076F18A54AF3001BD96B /* SlideUpAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SlideUpAnimator.h; path = Recipes/AnvilDropViewTransition/SlideUpAnimator.h; sourceTree = "<group>"; };
+		0725077018A54AF3001BD96B /* SlideUpAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SlideUpAnimator.m; path = Recipes/AnvilDropViewTransition/SlideUpAnimator.m; sourceTree = "<group>"; };
 		0772A31B18981E1F0065920F /* DynamicsDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicsDemo.h; sourceTree = "<group>"; };
 		0772A31C18981E1F0065920F /* DynamicsDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicsDemo.m; sourceTree = "<group>"; };
 		0776BDE218A3B1610020EB67 /* ImageWellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImageWellView.h; path = Recipes/ImageWell/ImageWellView.h; sourceTree = "<group>"; };
@@ -278,10 +284,14 @@
 				07B0D9EC18A38EBC00B46DF0 /* FirstAnvilViewController.m */,
 				07B0D9EE18A38F2F00B46DF0 /* ModalAnvilViewController.h */,
 				07B0D9EF18A38F2F00B46DF0 /* ModalAnvilViewController.m */,
-				07B0D9F118A391C100B46DF0 /* AnvilAnimator.h */,
-				07B0D9F218A391C100B46DF0 /* AnvilAnimator.m */,
 				07B0D9F418A392F400B46DF0 /* AnvilTransitionVendor.h */,
 				07B0D9F518A392F400B46DF0 /* AnvilTransitionVendor.m */,
+				07B0D9F118A391C100B46DF0 /* AnvilAnimator.h */,
+				07B0D9F218A391C100B46DF0 /* AnvilAnimator.m */,
+				0725076F18A54AF3001BD96B /* SlideUpAnimator.h */,
+				0725077018A54AF3001BD96B /* SlideUpAnimator.m */,
+				0725076C18A52C4E001BD96B /* SmokeGenerator.h */,
+				0725076D18A52C4E001BD96B /* SmokeGenerator.m */,
 			);
 			name = AnvilViewController;
 			sourceTree = "<group>";
@@ -475,6 +485,7 @@
 				07B0D9CB18A29ECB00B46DF0 /* ImpulsePush.m in Sources */,
 				07B0D9C118A29ECB00B46DF0 /* AttachmentPoint1.m in Sources */,
 				07EB429D17AC1A5C0067F348 /* ShapeView.m in Sources */,
+				0725076E18A52C4E001BD96B /* SmokeGenerator.m in Sources */,
 				07EB427017ABB51E0067F348 /* main.m in Sources */,
 				07B0D9CC18A29ECB00B46DF0 /* SnapDemo.m in Sources */,
 				07B0D9D918A29EEA00B46DF0 /* SpecularButtonViewController.m in Sources */,
@@ -486,6 +497,7 @@
 				07B0D9ED18A38EBC00B46DF0 /* FirstAnvilViewController.m in Sources */,
 				07B0D9C318A29ECB00B46DF0 /* AttachmentView.m in Sources */,
 				07B0D9E918A2AC5500B46DF0 /* DangleMenuController.m in Sources */,
+				0725077118A54AF3001BD96B /* SlideUpAnimator.m in Sources */,
 				0725076B18A4E641001BD96B /* DFSImageViewController.m in Sources */,
 				07EB427D17ABB51E0067F348 /* DynamicsDemoViewController.m in Sources */,
 				07FC78F518A24A0F00D1E4A7 /* RecipesListViewController.m in Sources */,

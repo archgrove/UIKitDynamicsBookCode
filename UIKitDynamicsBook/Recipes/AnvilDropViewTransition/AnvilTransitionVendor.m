@@ -7,18 +7,19 @@
 //
 
 #import "AnvilTransitionVendor.h"
+#import "SlideUpAnimator.h"
 #import "AnvilAnimator.h"
 
 @implementation AnvilTransitionVendor
 
 - (id<UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed
 {
-    return [[AnvilAnimator alloc] initWithMode:AnvilAnimationDismissal];
+    return [[SlideUpAnimator alloc] init];
 }
 
 - (id<UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source
 {
-    return [[AnvilAnimator alloc] initWithMode:AnvilAnimationArrival];
+    return [[AnvilAnimator alloc] init];
 }
 
 @end

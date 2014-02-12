@@ -10,7 +10,7 @@
 
 @implementation DangleMenuController
 {
-    
+    UIDynamicItemBehavior *_dynamicItemBehavior;
 }
 
 - (instancetype)initWithReferenceView:(UIView*)refView menuRootView:(UIView*)menuRoot menuItems:(NSArray*)menuItems
@@ -23,15 +23,21 @@
         _menuRootView = menuRoot;
         
         _dynamicAnimator = [[UIDynamicAnimator alloc] initWithReferenceView:refView];
-        _gravityBehavior = [[UIGravityBehavior alloc] init];
         
+        _gravityBehavior = [[UIGravityBehavior alloc] init];
         [_dynamicAnimator addBehavior:_gravityBehavior];
+        
+        _dynamicItemBehavior = [[UIDynamicItemBehavior alloc] initWithItems:@[menuRoot]];
+        _dynamicItemBehavior.resistance = 3;
+        _dynamicItemBehavior.allowsRotation = NO;
+        [_dynamicAnimator addBehavior:_dynamicItemBehavior];
         
         _items = [NSMutableArray arrayWithCapacity:menuItems.count];
         _itemBehaviors = [NSMutableArray arrayWithCapacity:menuItems.count];
         
         _isExpanded = FALSE;
         _minimumVerticalSeparation = 40;
+        _jitter = 5;
         
         for (UIView *view in menuItems)
             [self addMenuItem:view];
@@ -54,6 +60,7 @@
     NSAssert(![_items containsObject:item], @"Cannot add a menu item that's already added");
     
     [_gravityBehavior addItem:item];
+    [_dynamicItemBehavior addItem:item];
     
     if (_isExpanded)
     {
@@ -71,7 +78,6 @@
         [_itemBehaviors addObject:snapToRoot];
     }
     
-    
     [_items addObject:item];
 }
 
@@ -85,6 +91,7 @@
     
     [_dynamicAnimator removeBehavior:itemBehavior];
     [_gravityBehavior removeItem:item];
+    [_dynamicItemBehavior removeItem:item];
     
     [_items removeObjectAtIndex:indexOfItem];
     [_itemBehaviors removeObjectAtIndex:indexOfItem];
@@ -117,8 +124,13 @@
     for (int i = 0; i < _items.count; i++)
     {
         UIView *previous = (i == 0) ? _menuRootView : _items[i - 1];
-        UIAttachmentBehavior *attachmentToPrevious = [[UIAttachmentBehavior alloc] initWithItem:_items[i] attachedToItem:previous];
+        int jitter = (rand() % (self.jitter * 2)) - self.jitter;
+        
+        UIAttachmentBehavior *attachmentToPrevious = [[UIAttachmentBehavior alloc] initWithItem:_items[i] offsetFromCenter:UIOffsetMake(0, 0) attachedToItem:previous offsetFromCenter:UIOffsetMake(jitter, 0)];
         attachmentToPrevious.length = self.minimumVerticalSeparation;
+        //UIView *item = _items[i];
+        //item.center = CGPointMake(item.center.x, item.center.y + (i * 10));
+        //NSLog(@"Moved to %f", item.center.y);
         
         [_dynamicAnimator addBehavior:attachmentToPrevious];
         [_itemBehaviors addObject:attachmentToPrevious];

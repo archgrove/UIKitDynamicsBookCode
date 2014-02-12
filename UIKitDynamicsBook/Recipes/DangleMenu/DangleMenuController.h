@@ -22,6 +22,7 @@
 @property (readonly) NSArray *menuItems;
 @property (readonly) BOOL isExpanded;
 @property CGFloat minimumVerticalSeparation;
+@property NSUInteger jitter;
 
 - (instancetype)initWithReferenceView:(UIView*)refView menuRootView:(UIView*)menuRoot menuItems:(NSArray*)menuItems;
 

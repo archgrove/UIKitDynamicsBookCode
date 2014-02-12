@@ -73,9 +73,6 @@
     modalView.frame = CGRectMake(0, -modalView.frame.size.height, modalView.frame.size.width, modalView.frame.size.height);
     [_transitionContext.containerView addSubview:modalView];
     
-    dynamicAnimator = [[UIDynamicAnimator alloc] initWithReferenceView:_transitionContext.containerView];
-    dynamicAnimator.delegate = self;
-    
     // Add a boundary at the bottom of the screen
     CGSize screenSize = [UIScreen mainScreen].bounds.size;
     CGPoint baselineStart = CGPointMake(0, screenSize.height + 0.5);
@@ -87,6 +84,9 @@
     
     gravityBehavior = [[UIGravityBehavior alloc] initWithItems:@[modalView]];
     gravityBehavior.gravityDirection = CGVectorMake(0, self.gravityStrength);
+    
+    dynamicAnimator = [[UIDynamicAnimator alloc] initWithReferenceView:_transitionContext.containerView];
+    dynamicAnimator.delegate = self;
     
     [dynamicAnimator addBehavior:collisionBehavior];
     [dynamicAnimator addBehavior:gravityBehavior];

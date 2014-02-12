@@ -24,7 +24,7 @@ inline static CGFloat interpolate(CGFloat source, CGFloat dest, float factor)
 
 - (instancetype)initWithBackgroundColor:(UIColor*)color specularColor:(UIColor*)specColor
 {
-    return [self initWithBackgroundColor:color specularColor:specColor lightNormalX:0.5 lightNormalY:0.5];
+    return [self initWithBackgroundColor:color specularColor:specColor lightNormalX:0.25 lightNormalY:0.25];
 }
 
 - (instancetype)initWithBackgroundColor:(UIColor*)color specularColor:(UIColor*)specColor lightNormalX:(CGFloat)x lightNormalY:(CGFloat)y
@@ -58,7 +58,7 @@ inline static CGFloat interpolate(CGFloat source, CGFloat dest, float factor)
     // The "specular" angle
     yaw = M_PI * self.lightNormalX;
     pitch = M_PI * self.lightNormalY;
-    CGFloat specularVector[] = { sin(yaw) * -cos(pitch), sin(pitch), cos(yaw) * -cos(pitch) };
+    CGFloat specularVector[] = { sin(yaw) * -cos(pitch), cos(yaw) * -cos(pitch), sin(pitch) };
 
     // We thus approximate Phong shading to compute the specular intensisty
     CGFloat dotProduct =   specularVector[0] * deviceVector[0]

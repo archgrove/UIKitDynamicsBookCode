@@ -58,7 +58,7 @@ inline static CGFloat interpolate(CGFloat source, CGFloat dest, float factor)
     // The "specular" angle
     yaw = M_PI * self.lightNormalX;
     pitch = M_PI * self.lightNormalY;
-    CGFloat specularVector[] = { sin(yaw) * -cos(pitch), cos(yaw) * -cos(pitch), sin(pitch) };
+    CGFloat specularVector[] = { sin(yaw) * -cos(pitch), sin(pitch), cos(yaw) * -cos(pitch)  };
 
     // We thus approximate Phong shading to compute the specular intensisty
     CGFloat dotProduct =   specularVector[0] * deviceVector[0]

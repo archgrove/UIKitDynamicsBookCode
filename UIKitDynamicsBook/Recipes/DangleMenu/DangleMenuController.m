@@ -8,6 +8,8 @@
 
 #import "DangleMenuController.h"
 
+#import "RotationLimitBehavior.h"
+
 @implementation DangleMenuController
 {
     UIDynamicItemBehavior *_dynamicItemBehavior;
@@ -128,10 +130,7 @@
         
         UIAttachmentBehavior *attachmentToPrevious = [[UIAttachmentBehavior alloc] initWithItem:_items[i] offsetFromCenter:UIOffsetMake(0, 0) attachedToItem:previous offsetFromCenter:UIOffsetMake(jitter, 0)];
         attachmentToPrevious.length = self.minimumVerticalSeparation;
-        //UIView *item = _items[i];
-        //item.center = CGPointMake(item.center.x, item.center.y + (i * 10));
-        //NSLog(@"Moved to %f", item.center.y);
-        
+
         [_dynamicAnimator addBehavior:attachmentToPrevious];
         [_itemBehaviors addObject:attachmentToPrevious];
     }

@@ -36,6 +36,7 @@
 		07B0D9F018A38F2F00B46DF0 /* ModalAnvilViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B0D9EF18A38F2F00B46DF0 /* ModalAnvilViewController.m */; };
 		07B0D9F318A391C100B46DF0 /* AnvilAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B0D9F218A391C100B46DF0 /* AnvilAnimator.m */; };
 		07B0D9F618A392F400B46DF0 /* AnvilTransitionVendor.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B0D9F518A392F400B46DF0 /* AnvilTransitionVendor.m */; };
+		07E6D7A018ABD9F900CC4FD0 /* RotationLimitBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = 07E6D79F18ABD9F900CC4FD0 /* RotationLimitBehavior.m */; };
 		07EB426417ABB51E0067F348 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07EB426317ABB51E0067F348 /* Foundation.framework */; };
 		07EB426617ABB51E0067F348 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07EB426517ABB51E0067F348 /* CoreGraphics.framework */; };
 		07EB426817ABB51E0067F348 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07EB426717ABB51E0067F348 /* UIKit.framework */; };
@@ -123,6 +124,8 @@
 		07B0D9F218A391C100B46DF0 /* AnvilAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AnvilAnimator.m; path = Recipes/AnvilDropViewTransition/AnvilAnimator.m; sourceTree = "<group>"; };
 		07B0D9F418A392F400B46DF0 /* AnvilTransitionVendor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AnvilTransitionVendor.h; path = Recipes/AnvilDropViewTransition/AnvilTransitionVendor.h; sourceTree = "<group>"; };
 		07B0D9F518A392F400B46DF0 /* AnvilTransitionVendor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AnvilTransitionVendor.m; path = Recipes/AnvilDropViewTransition/AnvilTransitionVendor.m; sourceTree = "<group>"; };
+		07E6D79E18ABD9F900CC4FD0 /* RotationLimitBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RotationLimitBehavior.h; path = Recipes/DangleMenu/RotationLimitBehavior.h; sourceTree = "<group>"; };
+		07E6D79F18ABD9F900CC4FD0 /* RotationLimitBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RotationLimitBehavior.m; path = Recipes/DangleMenu/RotationLimitBehavior.m; sourceTree = "<group>"; };
 		07EB426017ABB51E0067F348 /* UIKitDynamicsBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitDynamicsBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07EB426317ABB51E0067F348 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		07EB426517ABB51E0067F348 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -273,6 +276,8 @@
 				07B0D9E518A2AC1C00B46DF0 /* DangleMenuViewController.m */,
 				07B0D9E718A2AC5500B46DF0 /* DangleMenuController.h */,
 				07B0D9E818A2AC5500B46DF0 /* DangleMenuController.m */,
+				07E6D79E18ABD9F900CC4FD0 /* RotationLimitBehavior.h */,
+				07E6D79F18ABD9F900CC4FD0 /* RotationLimitBehavior.m */,
 			);
 			name = DangleMenu;
 			sourceTree = "<group>";
@@ -498,6 +503,7 @@
 				07B0D9C318A29ECB00B46DF0 /* AttachmentView.m in Sources */,
 				07B0D9E918A2AC5500B46DF0 /* DangleMenuController.m in Sources */,
 				0725077118A54AF3001BD96B /* SlideUpAnimator.m in Sources */,
+				07E6D7A018ABD9F900CC4FD0 /* RotationLimitBehavior.m in Sources */,
 				0725076B18A4E641001BD96B /* DFSImageViewController.m in Sources */,
 				07EB427D17ABB51E0067F348 /* DynamicsDemoViewController.m in Sources */,
 				07FC78F518A24A0F00D1E4A7 /* RecipesListViewController.m in Sources */,

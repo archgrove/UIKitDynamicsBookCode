@@ -125,7 +125,10 @@
     // Add attachment behaviors
     for (int i = 0; i < _items.count; i++)
     {
+        // We either attach to the root menu, or the previous view in the chain
         UIView *previous = (i == 0) ? _menuRootView : _items[i - 1];
+        
+        // The attachment if offset from the centre by a random amount up to the jitter factor
         int jitter = (rand() % (self.jitter * 2)) - self.jitter;
         
         UIAttachmentBehavior *attachmentToPrevious = [[UIAttachmentBehavior alloc] initWithItem:_items[i] offsetFromCenter:UIOffsetMake(0, 0) attachedToItem:previous offsetFromCenter:UIOffsetMake(jitter, 0)];

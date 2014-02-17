@@ -29,4 +29,5 @@
     
     self.title = @"Image well";
 }
+
 @end

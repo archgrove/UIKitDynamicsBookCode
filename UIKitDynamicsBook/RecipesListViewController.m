@@ -16,6 +16,7 @@
 #import "Recipes/AnvilDropViewTransition/FirstAnvilViewController.h"
 #import "Recipes/ImageWell/ImageWellViewController.h"
 #import "Recipes/SpecularBackground/SpecularButtonViewController.h"
+#import "Recipes/ParallaxMotionEffect/ParallaxEffectViewController.h"
 
 @implementation RecipesListViewController
 {
@@ -35,6 +36,7 @@
                  [FirstAnvilViewController class],
                  [ImageWellViewController class],
                  [SpecularButtonViewController class],
+                 [ParallaxEffectViewController class]
                ];
     recipeTitles = @[
                      @"Bounce-in menu",
@@ -43,7 +45,8 @@
                      @"Dangle menu",
                      @"Anvil transition",
                      @"Image well",
-                     @"Specular background"
+                     @"Specular background",
+                     @"Parallax effect"
                     ];
     
     NSAssert(recipes.count == recipeTitles.count, @"Must have the number of recipes as titles");

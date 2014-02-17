@@ -52,6 +52,8 @@
 		07EB429017ABB51E0067F348 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 07EB428E17ABB51E0067F348 /* InfoPlist.strings */; };
 		07EB429217ABB51E0067F348 /* UIKitDynamicsBookTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 07EB429117ABB51E0067F348 /* UIKitDynamicsBookTests.m */; };
 		07EB429D17AC1A5C0067F348 /* ShapeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 07EB429C17AC1A5C0067F348 /* ShapeView.m */; };
+		07ED448B18B230AD004EEB1B /* ParallaxEffectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07ED448A18B230AD004EEB1B /* ParallaxEffectViewController.m */; };
+		07ED448E18B230C0004EEB1B /* ParallaxMotionEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 07ED448D18B230C0004EEB1B /* ParallaxMotionEffect.m */; };
 		07FC78F518A24A0F00D1E4A7 /* RecipesListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07FC78F418A24A0F00D1E4A7 /* RecipesListViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -147,6 +149,10 @@
 		07EB429117ABB51E0067F348 /* UIKitDynamicsBookTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIKitDynamicsBookTests.m; sourceTree = "<group>"; };
 		07EB429B17AC1A5C0067F348 /* ShapeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShapeView.h; sourceTree = "<group>"; };
 		07EB429C17AC1A5C0067F348 /* ShapeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShapeView.m; sourceTree = "<group>"; };
+		07ED448918B230AD004EEB1B /* ParallaxEffectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ParallaxEffectViewController.h; path = Recipes/ParallaxMotionEffect/ParallaxEffectViewController.h; sourceTree = "<group>"; };
+		07ED448A18B230AD004EEB1B /* ParallaxEffectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ParallaxEffectViewController.m; path = Recipes/ParallaxMotionEffect/ParallaxEffectViewController.m; sourceTree = "<group>"; };
+		07ED448C18B230C0004EEB1B /* ParallaxMotionEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ParallaxMotionEffect.h; path = Recipes/ParallaxMotionEffect/ParallaxMotionEffect.h; sourceTree = "<group>"; };
+		07ED448D18B230C0004EEB1B /* ParallaxMotionEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ParallaxMotionEffect.m; path = Recipes/ParallaxMotionEffect/ParallaxMotionEffect.m; sourceTree = "<group>"; };
 		07FC78F318A24A0F00D1E4A7 /* RecipesListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipesListViewController.h; sourceTree = "<group>"; };
 		07FC78F418A24A0F00D1E4A7 /* RecipesListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipesListViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -229,6 +235,7 @@
 		07B0D9CD18A29ED300B46DF0 /* Recipes */ = {
 			isa = PBXGroup;
 			children = (
+				07ED448818B22FCA004EEB1B /* ParallaxMotionEffect */,
 				0776BDE118A3B1270020EB67 /* ImageWell */,
 				07B0D9EA18A2BF8700B46DF0 /* AnvilViewController */,
 				07B0D9E018A2AB5700B46DF0 /* DangleMenu */,
@@ -384,6 +391,17 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		07ED448818B22FCA004EEB1B /* ParallaxMotionEffect */ = {
+			isa = PBXGroup;
+			children = (
+				07ED448918B230AD004EEB1B /* ParallaxEffectViewController.h */,
+				07ED448A18B230AD004EEB1B /* ParallaxEffectViewController.m */,
+				07ED448C18B230C0004EEB1B /* ParallaxMotionEffect.h */,
+				07ED448D18B230C0004EEB1B /* ParallaxMotionEffect.m */,
+			);
+			name = ParallaxMotionEffect;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -483,6 +501,7 @@
 			files = (
 				07B0D9C418A29ECB00B46DF0 /* BehaviorDemosListViewController.m in Sources */,
 				07B0D9C818A29ECB00B46DF0 /* ContinuousPush.m in Sources */,
+				07ED448B18B230AD004EEB1B /* ParallaxEffectViewController.m in Sources */,
 				07B0D9CA18A29ECB00B46DF0 /* GravityDemo.m in Sources */,
 				07EB427417ABB51E0067F348 /* AppDelegate.m in Sources */,
 				07B0D9D318A29EE200B46DF0 /* DraggableImageViewController.m in Sources */,
@@ -502,6 +521,7 @@
 				07B0D9ED18A38EBC00B46DF0 /* FirstAnvilViewController.m in Sources */,
 				07B0D9C318A29ECB00B46DF0 /* AttachmentView.m in Sources */,
 				07B0D9E918A2AC5500B46DF0 /* DangleMenuController.m in Sources */,
+				07ED448E18B230C0004EEB1B /* ParallaxMotionEffect.m in Sources */,
 				0725077118A54AF3001BD96B /* SlideUpAnimator.m in Sources */,
 				07E6D7A018ABD9F900CC4FD0 /* RotationLimitBehavior.m in Sources */,
 				0725076B18A4E641001BD96B /* DFSImageViewController.m in Sources */,

@@ -13,6 +13,12 @@
 		0772A31D18981E1F0065920F /* DynamicsDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 0772A31C18981E1F0065920F /* DynamicsDemo.m */; };
 		0776BDE418A3B1610020EB67 /* ImageWellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0776BDE318A3B1610020EB67 /* ImageWellView.m */; };
 		0776BDE718A3B1710020EB67 /* ImageWellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0776BDE618A3B1710020EB67 /* ImageWellViewController.m */; };
+		07A7231818B3A0A600E0C387 /* ShatterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A7231718B3A0A600E0C387 /* ShatterViewController.m */; };
+		07A7231B18B3A0D300E0C387 /* ShatterLayerGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A7231A18B3A0D300E0C387 /* ShatterLayerGenerator.m */; };
+		07A7231E18B4C69400E0C387 /* LayerToDynamicItemAdaptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A7231D18B4C69400E0C387 /* LayerToDynamicItemAdaptor.m */; };
+		07A7232118B4D0C600E0C387 /* ShardBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A7232018B4D0C600E0C387 /* ShardBehavior.m */; };
+		07A7232418B4D27000E0C387 /* ViewShatterer.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A7232318B4D27000E0C387 /* ViewShatterer.m */; };
+		07A7232718B4E71A00E0C387 /* SampleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07A7232618B4E71A00E0C387 /* SampleView.xib */; };
 		07B0D9C118A29ECB00B46DF0 /* AttachmentPoint1.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B0D9B518A29ECB00B46DF0 /* AttachmentPoint1.m */; };
 		07B0D9C218A29ECB00B46DF0 /* AttachmentPoint2.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B0D9B618A29ECB00B46DF0 /* AttachmentPoint2.m */; };
 		07B0D9C318A29ECB00B46DF0 /* AttachmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B0D9B718A29ECB00B46DF0 /* AttachmentView.m */; };
@@ -80,6 +86,18 @@
 		0776BDE318A3B1610020EB67 /* ImageWellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ImageWellView.m; path = Recipes/ImageWell/ImageWellView.m; sourceTree = "<group>"; };
 		0776BDE518A3B1710020EB67 /* ImageWellViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImageWellViewController.h; path = Recipes/ImageWell/ImageWellViewController.h; sourceTree = "<group>"; };
 		0776BDE618A3B1710020EB67 /* ImageWellViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ImageWellViewController.m; path = Recipes/ImageWell/ImageWellViewController.m; sourceTree = "<group>"; };
+		07A7231618B3A0A600E0C387 /* ShatterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShatterViewController.h; path = Recipes/ShatterTransition/ShatterViewController.h; sourceTree = "<group>"; };
+		07A7231718B3A0A600E0C387 /* ShatterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShatterViewController.m; path = Recipes/ShatterTransition/ShatterViewController.m; sourceTree = "<group>"; };
+		07A7231918B3A0D300E0C387 /* ShatterLayerGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShatterLayerGenerator.h; path = Recipes/ShatterTransition/ShatterLayerGenerator.h; sourceTree = "<group>"; };
+		07A7231A18B3A0D300E0C387 /* ShatterLayerGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShatterLayerGenerator.m; path = Recipes/ShatterTransition/ShatterLayerGenerator.m; sourceTree = "<group>"; };
+		07A7231C18B4C69400E0C387 /* LayerToDynamicItemAdaptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LayerToDynamicItemAdaptor.h; path = Recipes/ShatterTransition/LayerToDynamicItemAdaptor.h; sourceTree = "<group>"; };
+		07A7231D18B4C69400E0C387 /* LayerToDynamicItemAdaptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LayerToDynamicItemAdaptor.m; path = Recipes/ShatterTransition/LayerToDynamicItemAdaptor.m; sourceTree = "<group>"; };
+		07A7231F18B4D0C600E0C387 /* ShardBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShardBehavior.h; path = Recipes/ShatterTransition/ShardBehavior.h; sourceTree = "<group>"; };
+		07A7232018B4D0C600E0C387 /* ShardBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShardBehavior.m; path = Recipes/ShatterTransition/ShardBehavior.m; sourceTree = "<group>"; };
+		07A7232218B4D27000E0C387 /* ViewShatterer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewShatterer.h; path = Recipes/ShatterTransition/ViewShatterer.h; sourceTree = "<group>"; };
+		07A7232318B4D27000E0C387 /* ViewShatterer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewShatterer.m; path = Recipes/ShatterTransition/ViewShatterer.m; sourceTree = "<group>"; };
+		07A7232518B4E27C00E0C387 /* ViewShattererDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewShattererDelegate.h; path = Recipes/ShatterTransition/ViewShattererDelegate.h; sourceTree = "<group>"; };
+		07A7232618B4E71A00E0C387 /* SampleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SampleView.xib; path = Recipes/ShatterTransition/SampleView.xib; sourceTree = "<group>"; };
 		07B0D9A918A29ECB00B46DF0 /* AttachmentPoint1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AttachmentPoint1.h; path = Demos/AttachmentPoint1.h; sourceTree = "<group>"; };
 		07B0D9AA18A29ECB00B46DF0 /* AttachmentPoint2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AttachmentPoint2.h; path = Demos/AttachmentPoint2.h; sourceTree = "<group>"; };
 		07B0D9AB18A29ECB00B46DF0 /* AttachmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AttachmentView.h; path = Demos/AttachmentView.h; sourceTree = "<group>"; };
@@ -201,6 +219,26 @@
 			name = ImageWell;
 			sourceTree = "<group>";
 		};
+		07A7231518B39D6E00E0C387 /* ShatterTransition */ = {
+			isa = PBXGroup;
+			children = (
+				07A7231618B3A0A600E0C387 /* ShatterViewController.h */,
+				07A7231718B3A0A600E0C387 /* ShatterViewController.m */,
+				07A7231918B3A0D300E0C387 /* ShatterLayerGenerator.h */,
+				07A7231A18B3A0D300E0C387 /* ShatterLayerGenerator.m */,
+				07A7231C18B4C69400E0C387 /* LayerToDynamicItemAdaptor.h */,
+				07A7231D18B4C69400E0C387 /* LayerToDynamicItemAdaptor.m */,
+				07A7231F18B4D0C600E0C387 /* ShardBehavior.h */,
+				07A7232018B4D0C600E0C387 /* ShardBehavior.m */,
+				07A7232218B4D27000E0C387 /* ViewShatterer.h */,
+				07A7232318B4D27000E0C387 /* ViewShatterer.m */,
+				07A7232518B4E27C00E0C387 /* ViewShattererDelegate.h */,
+				07A7232618B4E71A00E0C387 /* SampleView.xib */,
+				07ED448818B22FCA004EEB1B /* ParallaxMotionEffect */,
+			);
+			name = ShatterTransition;
+			sourceTree = "<group>";
+		};
 		07B0D9A818A29EC000B46DF0 /* Demos */ = {
 			isa = PBXGroup;
 			children = (
@@ -235,7 +273,7 @@
 		07B0D9CD18A29ED300B46DF0 /* Recipes */ = {
 			isa = PBXGroup;
 			children = (
-				07ED448818B22FCA004EEB1B /* ParallaxMotionEffect */,
+				07A7231518B39D6E00E0C387 /* ShatterTransition */,
 				0776BDE118A3B1270020EB67 /* ImageWell */,
 				07B0D9EA18A2BF8700B46DF0 /* AnvilViewController */,
 				07B0D9E018A2AB5700B46DF0 /* DangleMenu */,
@@ -478,6 +516,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07A7232718B4E71A00E0C387 /* SampleView.xib in Resources */,
 				07EB427F17ABB51E0067F348 /* Images.xcassets in Resources */,
 				07EB426E17ABB51E0067F348 /* InfoPlist.strings in Resources */,
 				07EB427717ABB51E0067F348 /* Main.storyboard in Resources */,
@@ -515,9 +554,11 @@
 				07B0D9D918A29EEA00B46DF0 /* SpecularButtonViewController.m in Sources */,
 				07B0D9E618A2AC1C00B46DF0 /* DangleMenuViewController.m in Sources */,
 				07B0D9C918A29ECB00B46DF0 /* ContinuousPushOffCentre.m in Sources */,
+				07A7231818B3A0A600E0C387 /* ShatterViewController.m in Sources */,
 				0772A31D18981E1F0065920F /* DynamicsDemo.m in Sources */,
 				07B0D9F318A391C100B46DF0 /* AnvilAnimator.m in Sources */,
 				07B0D9C718A29ECB00B46DF0 /* CollisionBehaviorDemo3.m in Sources */,
+				07A7231B18B3A0D300E0C387 /* ShatterLayerGenerator.m in Sources */,
 				07B0D9ED18A38EBC00B46DF0 /* FirstAnvilViewController.m in Sources */,
 				07B0D9C318A29ECB00B46DF0 /* AttachmentView.m in Sources */,
 				07B0D9E918A2AC5500B46DF0 /* DangleMenuController.m in Sources */,
@@ -526,9 +567,12 @@
 				07E6D7A018ABD9F900CC4FD0 /* RotationLimitBehavior.m in Sources */,
 				0725076B18A4E641001BD96B /* DFSImageViewController.m in Sources */,
 				07EB427D17ABB51E0067F348 /* DynamicsDemoViewController.m in Sources */,
+				07A7231E18B4C69400E0C387 /* LayerToDynamicItemAdaptor.m in Sources */,
 				07FC78F518A24A0F00D1E4A7 /* RecipesListViewController.m in Sources */,
+				07A7232418B4D27000E0C387 /* ViewShatterer.m in Sources */,
 				07B0D9D818A29EEA00B46DF0 /* SpecularBackgroundEffect.m in Sources */,
 				07B0D9D018A29EDC00B46DF0 /* ViewBounceInViewController.m in Sources */,
+				07A7232118B4D0C600E0C387 /* ShardBehavior.m in Sources */,
 				0776BDE418A3B1610020EB67 /* ImageWellView.m in Sources */,
 				07B0D9C518A29ECB00B46DF0 /* CollisionBehaviorDemo1.m in Sources */,
 				07B0D9DF18A29F9900B46DF0 /* GridView.m in Sources */,
